@@ -1,0 +1,18 @@
+.hero-co {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(179,114,207,1) 0%, rgba(0,0,0,0) 100%);
+    margin-top: 6rem;
+}
+
+.imageLogo {
+    position: absolute;
+    z-index: -1;
+    margin-top: -20em;
+    opacity: 0.4;
+    height: 60%;
+}
