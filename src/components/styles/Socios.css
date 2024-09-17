@@ -1,0 +1,77 @@
+.sociosCard {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 20%, rgba(255, 255, 255, 0.35) 100%);
+    width: 350px;
+    height: 180px;
+}
+.sociosImage:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: 300ms;
+}
+.sociosImage:not(:hover) {
+    opacity: 0.5;
+    transform: scale(1);
+    transition: 300ms;
+}
+@media (max-width: 450px) {
+    #socios {
+        height: 130vh;
+    }
+    .shadow {
+        flex-direction: column;
+        height: 130vh;
+
+        p {
+            width: 80%;
+        }
+    }
+    .sociosContainer {
+        gap: 2rem;
+        flex-direction: column;
+    }
+    .sociosCard {
+        width: 280px;
+        height: 140px;
+    }
+}
+@media (max-width: 770px) {
+    #socios {
+        height: 130vh;
+    }
+    .shadow {
+        flex-direction: column;
+        height: 130vh;
+
+        p {
+            width: 80%;
+        }
+    }
+    .sociosContainer {
+        gap: 2rem;
+        flex-direction: column;
+    }
+}
+.css-selector {
+    background: linear-gradient(270deg, #2b193d, #68388d, #50388d, #85388d, #8d3886);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

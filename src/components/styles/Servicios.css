@@ -1,0 +1,25 @@
+@media (max-width: 450px) {
+    #servicios {
+        width: 100%;
+        justify-content: center;
+        padding: 2rem 0;
+        flex-direction: column;
+
+        h2 {
+            font-size: 1.7rem;
+        }
+        p {
+            font-size: 1rem;
+            width: 90%;
+        }
+        .cardsContainer {
+            flex-direction: column;
+            width: 90%;
+        }
+    }
+}
+@media (max-width: 770px) {
+    #servicios {
+        flex-direction: column;
+    }
+}
