@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    
+    "dev": "nodemon ./src/index.js",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "nodemon": "nodemon ./src/index.js"
+    "preview": "vite preview"
+    
   },
   "dependencies": {
     "express": "^4.21.0",
