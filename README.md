@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# Anomaly pagina web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Diseño de la pagina web basado en Figma: <https://www.figma.com/design/1SI5NLZGIYTWLD38G4tAVk/ANOMALY-STUDIO?node-id=0-1&t=ehbIUZENUNN8MoKh-1>
 
-Currently, two official plugins are available:
+Pagina hecha en Astro y publicada por Hostinger
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image-from-figma](./public/readme-img/degingFromFigma.png)
 
-## Expanding the ESLint configuration
+## Pasos para editar y contribuir con la pagina:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Primero descarga el Codigo:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```terminal
+    git clone https://github.com/YoAlejoDev/AnomalyWebSite.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Luego instala las dependencias:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```terminal
+    pnpm init
+    pnpm install
+    pnpm install -D tailwindcss
+    npx tailwindcss init  
 ```
+
+Diseño y Codigo por:
+
+- Alejandro Hurtado: [https://github.com/YoAlejoDev](https://github.com/YoAlejoDev)
+- Juan Diego Calle: [https://github.com/jdicans](https://github.com/jdicans)
+
+© Todos los derechos reservados para Anomaly.
