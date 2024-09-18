@@ -5,6 +5,7 @@ import InfinityScroll from './components/general/InfinityScroll';
 import Servicios from './components/Servicios';
 import Hese from './components/general/Hese';
 import Socios from './components/Socios';
+import Footer from './components/main/Footer';
 
 import './styles/App.css'
 
@@ -18,6 +19,7 @@ export default function App() {
       <Servicios />
       <Hese />
       <Socios />
+      <Footer />
     </main>
   )
 }

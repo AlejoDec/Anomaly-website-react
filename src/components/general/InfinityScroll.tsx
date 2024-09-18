@@ -2,7 +2,7 @@ import '../styles/InfinityScroll.css';
 
 export default function InfinityScroll() {
     return (
-        <div className="flex overflow-hidden space-x-16 group py-6">
+        <div className="scrooll flex overflow-hidden space-x-16 group py-6">
             <div className="flex space-x-16 animate-loop-scroll group-hover:paused">
                 <p className="max-w-none text-stone-300 text-4xl">SEO</p>
                 <p className="max-w-none text-stone-300 text-4xl">WEB</p>

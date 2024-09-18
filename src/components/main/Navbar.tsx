@@ -4,7 +4,7 @@ export default function Navbar() {
     const navItems: {label: string, path: string}[] = [
         { label: 'Inicio', path: '/' },
         { label: 'Acerca', path: '/about' },
-        { label: 'Contacto', path: '/contact' },
+        { label: 'Contacto', path: '/views/Contacto' },
         { label: 'Servicios', path: '/services' }
     ]
 

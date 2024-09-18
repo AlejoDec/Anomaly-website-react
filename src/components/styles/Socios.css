@@ -14,7 +14,7 @@
     transition: 300ms;
 }
 @media (max-width: 450px) {
-    #socios {
+    .socios {
         height: 130vh;
     }
     .shadow {
@@ -35,7 +35,7 @@
     }
 }
 @media (max-width: 770px) {
-    #socios {
+    .socios {
         height: 130vh;
     }
     .shadow {

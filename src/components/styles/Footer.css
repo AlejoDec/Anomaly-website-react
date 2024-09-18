@@ -1,0 +1,15 @@
+footer {
+    box-shadow: 0px -40px 50px 20px #282A2B;
+    z-index: 1;
+}
+.lineas1 {
+    rotate: 1 0 1 3deg;
+}
+.lineas2{
+    rotate: 1 0 1 -6deg;
+    z-index: 1;
+}
+.lineas3 {
+    rotate: 1 0 1 3deg;
+    z-index: 1;
+}
