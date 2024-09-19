@@ -1,7 +1,7 @@
-import NewTag from "./hero/NewTag";
-import ImageHero from "./hero/ImageHero";
-import TextHero from "./hero/TextHero";
-import './styles/Hero.css';
+import NewTag from "../hero/NewTag";
+import ImageHero from "../hero/ImageHero";
+import TextHero from "../hero/TextHero";
+import '../styles/Hero.css';
 
 export default function Hero() {
     return (

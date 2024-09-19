@@ -1,4 +1,4 @@
-import './styles/Socios.css';
+import '../styles/Socios.css';
 
 const clientes = [
     {

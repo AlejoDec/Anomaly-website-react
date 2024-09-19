@@ -1,25 +1,24 @@
-import Navbar from './components/main/Navbar'
-import BackToTop from './components/general/BackToTop';
-import Hero from './components/Hero';
-import InfinityScroll from './components/general/InfinityScroll';
-import Servicios from './components/Servicios';
-import Hese from './components/general/Hese';
-import Socios from './components/Socios';
-import Footer from './components/main/Footer';
+import HomePage from './components/pages/HomePage';
+import About from './components/pages/About';
+import Contacto from './components/pages/Contacto';
+import Services from './components/pages/Services';
+import NotFound from './components/pages/404';
+
+import { Router } from './Router';
 
 import './styles/App.css'
 
+const rutas = [
+  { path: '/', component: HomePage },
+  { path: '/about', component: About },
+  { path: '/contact', component: Contacto },
+  { path: '/services', component: Services },
+]
+
 export default function App() {
   return (
-    <main className='w-screen flex flex-col justify-center items-center overflow-x-hidden scroll-smoth'>
-      <Navbar />
-      <BackToTop />
-      <Hero />
-      <InfinityScroll />
-      <Servicios />
-      <Hese />
-      <Socios />
-      <Footer />
-    </main>
+    <>
+      <Router rutas={rutas} defaultComponent={NotFound} />
+    </>
   )
 }

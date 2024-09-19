@@ -1,11 +1,13 @@
+import { Link } from '../../Link';
 import '../styles/Navbar.css';
 
 export default function Navbar() {
     const navItems: {label: string, path: string}[] = [
         { label: 'Inicio', path: '/' },
-        { label: 'Acerca', path: '/about' },
-        { label: 'Contacto', path: '/views/Contacto' },
-        { label: 'Servicios', path: '/services' }
+        { label: 'Nosotros', path: '/about' },
+        { label: 'Contacto', path: '/contact' },
+        // { label: 'Servicios', path: '/services' }
+        // { label: 'Blog', path: '/blog' }
     ]
 
     const menuButton = document.querySelector('.menu')
@@ -34,7 +36,7 @@ export default function Navbar() {
                     {
                         Object.entries(navItems).map(([key, item]) => (
                             <li className="listContainer my-4" key={key}>
-                                <a href={item.path} className="listStyle">{item.label}</a>
+                                <Link to={item.path} className="listStyle">{item.label}</Link>
                             </li>
                         ))
                     }

@@ -1,14 +1,26 @@
-# Anomaly pagina web
+# Anomaly pagina web - Leer Readme
 
 Diseño de la pagina web basado en Figma: <https://www.figma.com/design/1SI5NLZGIYTWLD38G4tAVk/ANOMALY-STUDIO?node-id=0-1&t=ehbIUZENUNN8MoKh-1>
 
-Pagina hecha en Astro y publicada por Hostinger
+Pagina hecha en React, TypeScript y NodeJS
 
 ![image-from-figma](./public/readme-img/degingFromFigma.png)
 
-## Pasos para editar y contribuir con la pagina:
+## Importante para el proyecto
 
-- Primero descarga el Codigo:
+1. Instalar PNPM con PowerShell en Windows:
+
+```terminal
+    Invoke-WebRequest https://get.pnpm.io/install.ps1 -UseBasicParsing | Invoke-Expression
+```
+
+1. Instalar GitHub Desktop:
+
+[link](https://desktop.github.com/download/)
+
+## Pasos para editar y contribuir con la pagina
+
+- Primero descarga el Codigo de la rama dev:
 
 ```terminal
     git clone https://github.com/YoAlejoDev/AnomalyWebSite.git

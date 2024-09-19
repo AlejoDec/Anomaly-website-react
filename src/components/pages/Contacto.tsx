@@ -1,15 +1,21 @@
-import './styles/contacto.css';
+import Navbar from '../main/Navbar';
+import BackToTop from '../general/BackToTop';
+import Footer from '../main/Footer';
+import '../styles/contacto.css';
 
 export default function Contacto() {
     return (
-        <div className="flex items-center justify-center flex-col gap-1" id="contacto">
+        <>
+        <Navbar />
+        <BackToTop />
+        <div className="flex items-center justify-center flex-col gap-1 contacto">
             <div className="contact flex w-full p-7 items-center">
                 <section className="imgC w-full h-auto">
                     <div className="imgContact">
-                        <img src="/contact/contact.jpg" alt="contacto" className="w-full rounded-xl" id="imgStyle" />
+                        <img src="/contact/contact.jpg" alt="contacto" className="w-full rounded-xl imgStyle" />
                     </div>
                 </section>
-                <section className="w-full h-auto flex justify-center items-center bg-[#13151a]">
+                <section className="w-full h-auto flex justify-center items-center">
                     <div className="text w-4/5 h-4/5 flex flex-col justify-center items-center gap-4">
                         <h2 className="text-4xl text-white">Contacto</h2>
                         <p className="text-white text-center">Tienes ideas que quieres digitalizar? Envianos tu informacion para estar en contacto.</p>
@@ -33,5 +39,7 @@ export default function Contacto() {
                 </section>
             </div>
         </div>
+        <Footer />
+        </>
     )
 }

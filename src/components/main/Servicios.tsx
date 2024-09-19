@@ -1,6 +1,6 @@
-import Card1 from './services/Card1';
-import Card2 from './services/Card2';
-import './styles/Servicios.css';
+import Card1 from '../services/Card1';
+import Card2 from '../services/Card2';
+import '../styles/Servicios.css';
 
 export default function Servicios() {
     return (
