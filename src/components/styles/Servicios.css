@@ -1,5 +1,5 @@
 @media (max-width: 450px) {
-    #servicios {
+    .servicios {
         width: 100%;
         justify-content: center;
         padding: 2rem 0;
@@ -19,7 +19,7 @@
     }
 }
 @media (max-width: 770px) {
-    #servicios {
+    .servicios {
         flex-direction: column;
     }
 }

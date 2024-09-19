@@ -1,7 +1,7 @@
 import '../styles/BackToTop.css';
 
 export default function BackToTop() {
-    const mybutton = document.getElementById("myBtn");
+    const mybutton = document.querySelector(".myBtn");
 
     window.onscroll = function() {scrollFunction()};
 
@@ -25,7 +25,7 @@ export default function BackToTop() {
     }
 
     return (
-        <button id="myBtn" title="Go to top" className='max-sm:left-3'>
+        <button title="Go to top" className='myBtn max-sm:left-3'>
             Up
         </button>
     )

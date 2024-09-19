@@ -1,5 +1,6 @@
 import { Link } from '../../Link';
 import '../styles/Navbar.css';
+import { useEffect } from 'react';
 
 export default function Navbar() {
     const navItems: {label: string, path: string}[] = [
@@ -10,29 +11,39 @@ export default function Navbar() {
         // { label: 'Blog', path: '/blog' }
     ]
 
-    const menuButton = document.getElementById('menu')
-    const ulButton = document.querySelectorAll('.listStyle')
+    useEffect(() => {
+        const menuButton = document.querySelector('.menu') as HTMLElement | null;
+        const ulButton = document.querySelectorAll('.listStyle');
+        const ul = document.querySelector('ul') as HTMLElement | null;
 
-    if (menuButton) {
-            menuButton.addEventListener('click', () => {
-            const ul = document.querySelector('ul')
-            if (ul !== null) {
-                ul.style.left = '0'
-                menuButton.style.display = 'none'
+        const handleMenuClick = () => {
+            if (ul && menuButton) {
+                ul.style.left = '0';
+                menuButton.style.display = 'none';
+                console.log('click');
             }
-        })
-    }
-    ulButton.forEach((button) => {
-        button.addEventListener('click', () => {
-            const ul = document.querySelector('ul')
-            if (ul !== null) {
-                ul.style.left = '-100%'
-                if (menuButton) {
-                    menuButton.style.display = 'block' // Ignorar error
-                }
+        };
+
+        const handleUlButtonClick = () => {
+            if (ul && menuButton) {
+                ul.style.left = '-100%';
+                menuButton.style.display = 'flex';
+                console.log('hidde');
             }
-        })
-    })
+        };
+
+        menuButton?.addEventListener('click', handleMenuClick);
+        ulButton.forEach((button) => {
+            button.addEventListener('click', handleUlButtonClick);
+        });
+
+        return () => {
+            menuButton?.removeEventListener('click', handleMenuClick);
+            ulButton.forEach((button) => {
+                button.removeEventListener('click', handleUlButtonClick);
+            });
+        };
+    }, []);
 
     return (
         <div className="w-screen flex justify-center">
@@ -47,8 +58,8 @@ export default function Navbar() {
                         ))
                     }
                 </ul>
-                <div className="menu-container hidden w-full h-full flex items-center">
-                    <img src="/anomaly-image/hamburger.png" alt="Menu" className="w-8 h-auto z-100" id='menu'/>
+                <div className="menu-container hidden w-full h-full flex items-center menu">
+                    <img src="/anomaly-image/hamburger.png" alt="Menu" className="w-8 h-auto z-100"/>
                 </div>
                 <div className="cta-container flex items-center rounded-xl p-2">
                     <a href="/contact" className="callToAction flex w-40 h-7 p-3.5 justify-center items-center gap-2.5 rounded-lg font-normal border bg-purple-500 bg-opacity-40 inset-box-shadow text-light-color no-underline backdrop-filter blur-7">Contactanos</a>

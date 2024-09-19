@@ -4,7 +4,7 @@ const Miembros = [
     {
         nombre: "Alejandro ",
         apellidos: "Hurtado Alvarez",
-        rol: "CTO - Director de desarrollo",
+        rol: "CTO - Director de tecnología",
         img: "/miembros/alejandro.png",
         frase: "La tecnología es el futuro, y nosotros somos el futuro de la tecnología"
     },
@@ -18,9 +18,9 @@ const Miembros = [
     {
         nombre: "Pedro ",
         apellidos: "Calle Giraldo",
-        rol: "CEO - Co-fundador",
+        rol: "Founder - CSO - CMO",
         img: "/miembros/Pedro.jpg",
-        frase: ""
+        frase: "Peace through caos"
     },
     {
         nombre: "Yefferson ",
@@ -43,7 +43,7 @@ export default function Miembro() {
         Miembros.map((miembro) => (
             <div className="flex flex-col items-center gap-4 rounded-xl bg-[#000] w-full h-[341px] p-2">
                 <article className="relative w-full">
-                    <img src="/miembros/anonimo.png" alt="anonimus" className="rounded-xl" />
+                    <img src="/miembros/anonimo.png" alt="anonimus" className="rounded-xl text-stone-300" />
                     {/* <img src={miembro.img} alt={miembro.nombre}> */}
                 </article>
                 <h4 className="text-stone-400 text-xl text-center">{miembro.nombre}<br />{miembro.apellidos}</h4>

@@ -5,7 +5,7 @@ import '../styles/Hero.css';
 
 export default function Hero() {
     return (
-        <div className="hero-co" id="inicio">
+        <div className="hero-co">
             <NewTag />
             <TextHero />
             <img src="/anomaly-image/logo-morado.svg" alt="logo-morado-de-la-empresa" className="imageLogo" />

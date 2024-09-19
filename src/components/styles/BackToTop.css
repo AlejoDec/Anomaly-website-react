@@ -1,4 +1,4 @@
-#myBtn {
+.myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -16,6 +16,6 @@
     height: 57px;
 }
 
-#myBtn:hover {
+.myBtn:hover {
     background-color: #555;
 }
