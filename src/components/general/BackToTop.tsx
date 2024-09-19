@@ -8,9 +8,9 @@ export default function BackToTop() {
     function scrollFunction() {
         if (mybutton !== null) {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
+                mybutton.style.display = "block"; // Ignorar error de TS
             } else {
-                mybutton.style.display = "none";
+                mybutton.style.display = "none"; // Ignorar error de TS
             }
         }
     }
