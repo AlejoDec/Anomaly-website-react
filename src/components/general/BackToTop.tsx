@@ -1,7 +1,7 @@
 import '../styles/BackToTop.css';
 
 export default function BackToTop() {
-    const mybutton = document.querySelector(".myBtn");
+    const mybutton = document.querySelector(".myBtn") as HTMLElement;
 
     window.onscroll = function() {scrollFunction()};
 
