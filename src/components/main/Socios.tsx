@@ -17,7 +17,7 @@ const clientes = [
 
 export default function Socios() {
     return (
-        <div className="w-screen h-screen overflow-hidden socios">
+        <div className="w-screen h-screen overflow-hidden socios max-sm:h-[150vh]">
             <div className="css-selector flex flex-col justify-center items-center gap-5 w-full h-full shrink-0 -z-1 w-screen">
                 <div className="w-[90%] flex flex-col justify-center items-center gap-5">
                 <h2 className="text-stone-300 text-8xl self-start opacity-35 font-bold">CLIE</h2>

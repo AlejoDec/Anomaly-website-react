@@ -13,11 +13,10 @@ h2 {
     -webkit-text-fill-color: transparent;
     animation: animatedTextGradient 1.5s linear infinite;
 }
-
 @keyframes animatedTextGradient {
-to {
-background-position: 200% center;
-}
+    to {
+        background-position: 200% center;
+    }
 }
 @media (max-width: 450px) {
     .textHero-container {

@@ -1,4 +1,4 @@
-import CallToAction from "../general/CallToAction";
+import CTAbutton from "../general/CTAbutton";
 import '../styles/TextHero.css';
 
 export default function TextHero() {
@@ -13,7 +13,7 @@ export default function TextHero() {
             <p className="text-4xl font-light text-center w-[70%] text-stone-300">
                 En la industria, la conformidad es moneda corriente. Mismas ideas, mismas soluciones... mismos resultados
             </p>
-            <CallToAction href={"#contacto"} text={"¿Quieres ser diferente?"} className="text-stone-800 p-2 text-xl hover:text-white" />
+            <CTAbutton href={"/contact"} text={"¿Quieres ser diferente?"} className="text-stone-800 p-2 text-xl hover:text-white" />
         </div>
     )
 }

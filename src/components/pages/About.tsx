@@ -1,7 +1,7 @@
 import Navbar from "../main/Navbar";
 import BackToTop from "../general/BackToTop";
 import Miembro from "../about/Miembro";
-import CallToAction from "../general/CallToAction";
+import CallToAction from "../general/CTAbutton";
 import Footer from "../main/Footer";
 import '../styles/About.css';
 
@@ -10,8 +10,8 @@ export default function About() {
     return (
         <main className='w-screen flex flex-col justify-center items-center overflow-x-hidden scroll-smooth'>
             <Navbar />
-            <BackToTop />
             <div className="main-container flex flex-col items-center justify-center">
+                <BackToTop />
                 <section className="w-[90vw] flex py-16 px-6 gap-4 justify-center firstSection">
                     <div className="text-container w-2/4 h-full p-10 gap-16 flex flex-col items-center justify-center rounded-xl">
                         <div className="flex flex-col gap-4">
@@ -40,7 +40,7 @@ export default function About() {
                             <img src="/about/image-3.jpeg" alt="anomaly" className="primero-bento w-2/4 rounded-xl" />
                         </div>
                         </div>
-                        <div className="segundo-bento w-[25vw] flex flex-col justify-center items-center gap-2">
+                        <div className="segundo-bento w-[25vw] flex flex-col justify-center items-center gap-2 max-sm:hidden">
                         <div className="flex gap-2">
                             <img src="/about/image-4.jpeg" alt="anomaly" className="w-2/4 rounded-xl" />
                             <img src="/about/image-5.jpeg" alt="anomaly" className="w-2/4 rounded-xl" />
@@ -69,7 +69,7 @@ export default function About() {
                 <section className="cta-contact flex flex-col items-center justify-center">
                 <div className="bgcont w-[90vw] h-[60vh] flex flex-col items-center justify-center gap-4 p-4 rounded-xl">
                     <h3 className="text-stone-300 text-4xl text-center">Ya que nos conoces, ¿quieres trabajar con nosotros?</h3>
-                    <CallToAction href="/contact" text="¿Quieres que trabajemos juntos?" className="text-stone-800 p-2 text-xl hover:text-white" />
+                    <CallToAction href="/contact" text="¿Quieres que trabajemos juntos?" className="text-stone-800 p-2 text-xl hover:text-white max-sm:text-sm" />
                 </div>
                 </section>
             </div>

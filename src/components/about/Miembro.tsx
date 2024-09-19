@@ -23,11 +23,11 @@ const Miembros = [
         frase: ""
     },
     {
-        nombre: "Jefferson ",
-        apellidos: "Yeff :)",
-        rol: "Director de diseño",
+        nombre: "Yefferson ",
+        apellidos: "Muñoz Uribe",
+        rol: "Director Creativo",
         img: "/miembros/jefferson.jpg",
-        frase: ""
+        frase: "Si puedes soñarlo, podemos hacerlo"
     },
     {
         nombre: "Camilo",

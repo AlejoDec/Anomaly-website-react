@@ -25,7 +25,7 @@ export default function BackToTop() {
     }
 
     return (
-        <button id="myBtn" title="Go to top">
+        <button id="myBtn" title="Go to top" className='max-sm:left-3'>
             Up
         </button>
     )

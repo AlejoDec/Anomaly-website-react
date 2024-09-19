@@ -20,7 +20,7 @@ export default function Servicios() {
                 </div>
                 <div className="cardsContainer flex items-start gap-3">
                     <div>
-                        <Card2 title="Diseño" description="Diseñamos tus ideas y las volvemos unicas" image="/servicios/graph-design.png"/>
+                        <Card2 title="Diseño Grafico" description="Diseñamos tus ideas y las volvemos unicas" image="/servicios/graph-design.png"/>
                     </div>
                     <div>
                         <Card1 title="Estrategia SEO" description="Ayudamos a posicionar tu negocio" image="https://assets.entrepreneur.com/content/3x2/2000/1407799223-1-advanced-webmaster-tools-should-using-better-seo.jpg"/>                

@@ -11,8 +11,8 @@
     transform: scale(1);
     transition: 300ms;
 }
-@media (max-width: 450px) {
-    .tag-container {
+@media (max-width: 450px){
+    .tag-container{
         display: none;
     }
 }
