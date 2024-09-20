@@ -1,0 +1,27 @@
+.explain:hover {
+    color: rgb(245, 113, 227);
+    transition: all 300ms ease;
+}
+.explain:not(:hover) {
+    color: rgb(255, 255, 255);
+    transition: all 300ms ease;
+}
+#diseño, #web, #marketing, #apps {
+    border-top: 3px solid rgb(245, 113, 227);
+}
+.container {
+    padding-left: 2em;
+}
+.list-container {
+    .p-Keywords {
+        border-bottom: 2px solid rgb(245, 113, 227);
+    }
+    .p-Keywords:hover {
+        border-bottom: #fff solid 2px;
+        transition: all 300ms ease;
+    }
+    .p-Keywords:not(:hover) {
+        border-bottom: rgb(245, 113, 227) solid 2px;
+        transition: all 300ms ease;
+    }
+}

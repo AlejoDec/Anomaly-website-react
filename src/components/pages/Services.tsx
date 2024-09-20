@@ -1,5 +1,4 @@
 import Navbar from '../main/Navbar';
-import InfinityScroll from '../general/InfinityScroll';
 import BackToTop from '../general/BackToTop';
 import Footer from '../main/Footer';
 import '../styles/Services.css';
@@ -8,26 +7,90 @@ export default function Services() {
     return (
         <main className='w-screen max-sm:w-screen overflow-x-hidden'>
             <Navbar />
-            <h1 className='text-4xl text-stone-300 text-center font-base py-8'>Servicios</h1>
+            <h1 className='hidden'>Servicios</h1>
             <BackToTop />
-            <InfinityScroll />
-            <div className='grid grid-cols-4 gap-4 items-center justify-center max-sm:grid-cols-1 overflow-x-hidden'>
-                <div className='flex flex-col w-full p-4'>
-                    <h2 className='text-3xl text-stone-300 text-center font-base'>Desarrollo Web</h2>
-                    <p className='text-lg text-stone-300 text-center font-base'>Desarrollo de aplicaciones web a la medida, con tecnologías como React, Vite, Astro, WordPress, entre otras.</p>
-                </div>
-                <div className='flex flex-col w-full p-4'>
-                    <h2 className='text-3xl text-stone-300 text-center font-base'>Desarrollo Móvil</h2>
-                    <p className='text-lg text-stone-300 text-center font-base'>Desarrollo de aplicaciones móviles a la medida.</p>
-                </div>
-                <div className='flex flex-col w-full p-4'>
-                    <h2 className='text-3xl text-stone-300 text-center font-base'>Diseño Web</h2>
-                    <p className='text-lg text-stone-300 text-center font-base'>Diseño de interfaces web, con tecnologías como Figma, Adobe XD, Sketch, entre otras.</p>
-                </div>
-                <div className='flex flex-col w-full p-4'>
-                    <h2 className='text-3xl text-stone-300 text-center font-base'>Marketing Digital</h2>
-                    <p className='text-lg text-stone-300 text-center font-base'>Creación de contenido, calendario de publicaciones, organizacion de cuentas.</p>
-                </div>
+            <div className='flex flex-col py-12 container'>
+                <section className='flex justify-between h-[50vh] py-2'>
+                    <div className='flex flex-start'>
+                        <h3 className='text-stone-300 text-6xl text-center font-bold px-3'>Somos una agencia digital de multiservicios</h3>
+                    </div>
+                    <div className='flex flex-end'>
+                        <h3 className='text-stone-300 text-5xl text-center font-base px-3 flex items-end'>Nos apaciona el apoyar p nuestros clientes y llevarlos al proximo nivel</h3>
+                    </div>
+                </section>
+                <section id='web' className="flex flex-col">
+                    <div className='flex flex-start'>
+                        <h3 className='text-stone-300 text-[120px] font-bold'>Desarrollo Web</h3>
+                    </div>
+                    <div className='grid grid-cols-2'>
+                        <div className='w-[45vw] p-6'>
+                            <p className='text-stone-300 text-2xl explain'>Le damos imagen p tu negocio en el mundo virtual, posicionamiento y te llevamos de la mano con cualquier necesidad</p>
+                        </div>
+                        <div className='w-[45vw] p-12'>
+                            <div className='text-stone-300 text-2xl font-bold flex flex-col gap-4 list-container'>
+                                <p className="p-Keywords">Diseño UI/UX</p>
+                                <p className="p-Keywords">SEO</p>
+                                <p className="p-Keywords">Blog</p>
+                                <p className="p-Keywords">E-Commerce</p>
+                                <p className="p-Keywords">Web App</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id='apps' className="flex flex-col">
+                    <div className='flex flex-start'>
+                        <h3 className='text-stone-300 text-[120px] font-bold'>Desarrollo de Apps</h3>
+                    </div>
+                    <div className='grid grid-cols-2'>
+                        <div className='w-[45vw] p-6'>
+                            <p className='text-stone-300 text-2xl explain'>Desarrollamos aplicaciones moviles para cualquier necesidad, desde un pequeño negocio hasta una empresa grande</p>
+                        </div>
+                        <div className='w-[45vw] p-12'>
+                            <div className='text-stone-300 text-2xl font-bold flex flex-col gap-4 list-container'>
+                                <p className="p-Keywords">Android</p>
+                                <p className="p-Keywords">iOS</p>
+                                <p className="p-Keywords">Hibridas</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id='marketing' className="flex flex-col py-2">
+                    <div className='flex flex-start'>
+                        <h3 className='text-stone-300 text-[120px] font-bold'>Marketing Digital</h3>
+                    </div>
+                    <div className='grid grid-cols-2'>
+                        <div className='w-[45vw] p-6'>
+                            <p className='text-stone-300 text-2xl explain'>Te ayudamos p posicionar tu negocio en las redes sociales y en el mundo digital</p>
+                        </div>
+                        <div>
+                            <div className='text-stone-300 text-2xl font-bold flex flex-col gap-4 list-container'>
+                                <p className="p-Keywords">Redes Sociales</p>
+                                <p className="p-Keywords">SEO</p>
+                                <p className="p-Keywords">Email Marketing</p>
+                                <p className="p-Keywords">Google Ads</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id='diseño' className="flex flex-col">
+                    <div className='flex flex-start'>
+                        <h3 className='text-stone-300 text-[120px] font-bold'>Diseño Grafico</h3>
+                    </div>
+                    <div className='grid grid-cols-2'>
+                        <div className='w-[45vw] p-6'>
+                            <p className='text-stone-300 text-2xl explain'>Diseñamos tu marca, le damos identidad al estilo como p ti te gusta</p>
+                        </div>
+                        <div className='w-[45vw] p-12'>
+                            <div className='text-stone-300 text-2xl font-bold flex flex-col gap-4 list-container'>
+                                <p className="p-Keywords">Identidad</p>
+                                <p className="p-Keywords">Marca</p>
+                                <p className="p-Keywords">Publicidad</p>
+                                <p className="p-Keywords">Editorial</p>
+                                <p className="p-Keywords">Ilustración</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
             <Footer />
         </main>
