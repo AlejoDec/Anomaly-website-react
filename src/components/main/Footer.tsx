@@ -24,7 +24,7 @@ export default function Footer() {
                     <p className='max-sm:text-center'>2024 © All Rights Reserved</p>
                 </div>
                 <div>
-                    <a href="">
+                    <a href="https://www.instagram.com/anomalydigitalmarketing?igsh=MWdzNjVlcjZzNWN0Zg==" target='_blank'>
                         <img src="/red-social/instagram.png" alt="instagram" className='w-[27px] max-sm:w-[60px]' />
                     </a>
                 </div>
