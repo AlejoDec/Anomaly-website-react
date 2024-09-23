@@ -1,12 +1,9 @@
-import Navbar from '../main/Navbar';
 import BackToTop from '../general/BackToTop';
-import Footer from '../main/Footer';
 import '../styles/contacto.css';
 
 export default function Contacto() {
     return (
         <main className='w-screen max-sm:w-screen overflow-x-hidden'>
-            <Navbar />
             <div className="flex items-center justify-center flex-col gap-1 contacto max-sm:w-screen">
                 <div className="contact flex w-full p-7 items-center">
                     <BackToTop />
@@ -39,7 +36,6 @@ export default function Contacto() {
                     </section>
                 </div>
             </div>
-            <Footer />
         </main>
     );
 }

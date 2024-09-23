@@ -23,8 +23,7 @@ export default function Servicios() {
                         <Card2 title="Diseño Grafico" description="Diseñamos tus ideas y las volvemos unicas" image="/servicios/graph-design.webp"/>
                     </div>
                     <div>
-                        <Card1 title="Estrategia SEO" description="Ayudamos a posicionar tu negocio" image="/servicios/seo.webp
-                        "/>                
+                        <Card1 title="Estrategia SEO" description="Ayudamos a posicionar tu negocio" image="/servicios/seo.webp"/>                
                     </div>
                 </div>
             </div>

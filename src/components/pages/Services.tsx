@@ -1,12 +1,9 @@
-import Navbar from '../main/Navbar';
 import BackToTop from '../general/BackToTop';
-import Footer from '../main/Footer';
 import '../styles/Services.css';
 
 export default function Services() {
     return (
         <main className='w-screen max-sm:w-screen overflow-x-hidden'>
-            <Navbar />
             <h1 className='hidden'>Servicios</h1>
             <BackToTop />
             <div className='flex flex-col py-12 container'>
@@ -109,9 +106,6 @@ export default function Services() {
                     </div>
                 </section>
             </div>
-            
-            <Footer />
-            
         </main>
     );
 }
