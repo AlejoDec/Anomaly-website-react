@@ -35,6 +35,13 @@ Pagina hecha en React, TypeScript y NodeJS
     npx tailwindcss init  
 ```
 
+- En la carpeta del server
+
+```terminal
+    pnpm init
+    pnpm install -D nodemon
+```
+
 Diseño y Codigo por:
 
 - Alejandro Hurtado: [https://github.com/YoAlejoDev](https://github.com/YoAlejoDev)

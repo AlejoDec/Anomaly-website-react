@@ -20,7 +20,7 @@ export default function Services() {
                 </section>
                 <section id='web' className="flex flex-col">
                     <div className='flex flex-start'>
-                        <h3 className='text-stone-300 text-[120px] font-bold max-sm:text-4xl'>Desarrollo Web</h3>
+                        <h3 className='text-stone-300 text-[180px] font-base max-sm:text-4xl'>Desarrollo Web</h3>
                     </div>
                     <div className='grid grid-cols-2 max-sm:flex max-sm:flex-col'>
                         <div className='w-[45vw] p-6 max-sm:w-full'>

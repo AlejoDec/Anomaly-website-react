@@ -1,4 +1,4 @@
-import { Link } from '../../Link';
+import { Link } from '../../main/Link';
 import '../styles/Navbar.css';
 import { useEffect } from 'react';
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { EVENTS } from './consts'
 import { match } from 'path-to-regexp';
-import NotFound from './components/pages/404'
+import NotFound from '../components/pages/404'
 
 interface Route {
   path: string;

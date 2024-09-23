@@ -6,7 +6,7 @@ html {
     overflow: hidden;
 }
 .co {
-    background-image: linear-gradient(to right, #330537, #500953, #6f0d71, #910f8f, #b50fae);
+    background-color: #282a2b;
 }
 @keyframes stageBackground {
 0%, 10%, 90%, 100% {
