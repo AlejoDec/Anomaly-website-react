@@ -1,6 +1,6 @@
+import { useEffect } from 'react';
 import { Link } from '../../main/Link';
 import '../styles/Navbar.css';
-import { useEffect } from 'react';
 
 export default function Navbar() {
     const navItems: {label: string, path: string}[] = [
@@ -49,7 +49,7 @@ export default function Navbar() {
         <div className="w-screen flex justify-center">
             <nav className="w-4/5 max-h-16 flex justify-between aling-center px-6 py-2 text-white gap-12">
                 <img src="/anomaly-image/logo-morado.svg" alt="Logo-Anomaly" className="logoImga w-44 h-auto"/>
-                <ul className="flex py-0.5 px-3 justify-center items-center gap-7 rounded-full list-none w-2/4 max-sm:w-screen max-sm:rounded-none max-sm:gap-0">
+                <ul className="flex py-0.5 px-3 justify-center items-center gap-7 rounded-full list-none w-2/4 max-sm:w-screen max-sm:rounded-none max-sm:gap-0 ul-style">
                     {
                         Object.entries(navItems).map(([key, item]) => (
                             <li className="listContainer my-4 max-sm:my-0" key={key}>

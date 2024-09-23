@@ -9,7 +9,7 @@ nav {
     transform: scale(1);
     transition: 300ms;
 }
-ul {
+.ul-style {
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
 .listStyle {
@@ -49,7 +49,7 @@ ul {
         border-bottom: 0;
         background: rgba(0, 0, 0, 0);
 
-        ul {
+        .ul-style {
             display: flex;
             flex-direction: column;
             gap: 0;
@@ -63,7 +63,7 @@ ul {
             top: 0;
             left: 100%;
 
-            li {
+            .listContainer {
                 width: 100%;
                 text-align: center;
                 padding-top: 2rem;
