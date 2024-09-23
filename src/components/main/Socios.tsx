@@ -10,7 +10,7 @@ const clientes = [
     {
         id: 2,
         name: 'Tu Tiempo',
-        image: '/socios/tu-tiempo-logo.png',
+        image: '/socios/tu-tiempo-logo.webp',
         url: 'https://www.instagram.com/tutiempobarberia/'
     }
 ]
@@ -21,7 +21,7 @@ export default function Socios() {
             <div className="css-selector flex flex-col justify-center items-center gap-5 w-full h-full shrink-0 -z-1 w-screen">
                 <div className="w-[90%] flex flex-col justify-center items-center gap-5">
                 <h2 className="text-stone-300 text-8xl self-start opacity-35 font-bold">CLIE</h2>
-                <p className="text-stone-300 text-center text-2xl not-italic font-light leading-8">Empresas que nos dieron el voto de confianza y salimos adelante</p>
+                <p className="text-stone-300 text-center text-4xl not-italic font-light leading-8">Empresas que que confiaron en nosotros y tomaron la mejor desición </p><br />
                 <div className="sociosContainer flex justify-center items-center gap-10">
                     {
                         clientes.map(socio => (

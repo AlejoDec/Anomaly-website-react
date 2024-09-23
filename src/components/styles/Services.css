@@ -6,9 +6,10 @@
     color: rgb(255, 255, 255);
     transition: all 300ms ease;
 }
-#diseño, #web, #marketing, #apps {
+#diseño, #web, #marketing, #apps,#seo {
     border-top: 3px solid rgb(245, 113, 227);
 }
+
 .container {
     padding-left: 2em;
 }

@@ -3,10 +3,12 @@ import '../styles/Footer.css';
 export default function Footer() {
 
     return (
+        
         <footer className='flex flex-col w-screen text-stone-300 max-sm:items-center'>
+            <div className='footer-content-2 flex justify-between px-20 py-8 max-sm:flex-col max-sm:gap-4'></div>
             <div className='footer-content-2 flex justify-between px-20 py-8 max-sm:flex-col max-sm:gap-4'>
                 <div className='flex flex-col max-sm:items-center'>
-                    <img src="/anomaly-image/logoBlanco.png" alt="Anomaly-logo" className='w-[75px]' />
+                    <img src="/anomaly-image/logoBlanco.webp" alt="Anomaly-logo" className='w-[75px]' />
                     <h2 className='font-bold text-[80px] max-sm:text-[20px] max-sm:text-center'>Anomaly</h2>
                     <p className='font-base text-lg max-sm:text-center'>Agencia de desarrollo creativo</p>
                 </div>
@@ -25,10 +27,11 @@ export default function Footer() {
                 </div>
                 <div>
                     <a href="https://www.instagram.com/anomalydigitalmarketing?igsh=MWdzNjVlcjZzNWN0Zg==" target='_blank'>
-                        <img src="/red-social/instagram.png" alt="instagram" className='w-[27px] max-sm:w-[60px]' />
+                        <img src="/red-social/instagram.webp" alt="instagram" className='w-[27px] max-sm:w-[60px]' />
                     </a>
                 </div>
             </div>
+            
         </footer>
     )
 }
