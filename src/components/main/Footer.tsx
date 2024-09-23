@@ -1,6 +1,7 @@
 import '../styles/Footer.css';
 
 export default function Footer() {
+
     return (
         <footer className='flex flex-col w-screen text-stone-300 max-sm:items-center'>
             <div className='footer-content-2 flex justify-between px-20 py-8 max-sm:flex-col max-sm:gap-4'>
@@ -10,15 +11,6 @@ export default function Footer() {
                     <p className='font-base text-lg max-sm:text-center'>Agencia de desarrollo creativo</p>
                 </div>
                 <div className='flex gap-4'>
-                    <div className='flex flex-col max-sm:text-center'>
-                        <h3 className='font-bold'>Compañia</h3>
-                        <ul className='flex flex-col list-none border-none'>
-                            <a href="/">Inicio</a>
-                            <a href="/about">Nosotros</a>
-                            <a href="/contact">Contacto</a>
-                            <a href="/services">Servicios</a>
-                        </ul>
-                    </div>
                     <div className='flex flex-col max-sm:text-center'>
                         <h3 className='font-bold'>Legal</h3>
                         <ul className='border-none'>
