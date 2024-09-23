@@ -12,7 +12,7 @@ export default function Contacto() {
                     <BackToTop />
                     <section className="imgC w-full h-auto">
                         <div className="imgContact">
-                            <img src="/contact/contact.jpg" alt="contacto" className="w-full rounded-xl imgStyle" />
+                            <img src="/contact/contact.webp" alt="contacto" className="w-full rounded-xl imgStyle" />
                         </div>
                     </section>
                     <section className="w-full h-auto flex justify-center items-center max-sm:w-screen">

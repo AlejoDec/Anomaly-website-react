@@ -4,6 +4,7 @@ import Hero from "../main/Hero"
 import InfinityScroll from "../general/InfinityScroll"
 import Servicios from "../main/Servicios"
 import Hese from "../general/Hese"
+import Text1 from "../general/Text1"
 import Socios from "../main/Socios"
 import Footer from "../main/Footer"
 
@@ -14,6 +15,7 @@ export default function HomePage() {
             <BackToTop />
             <Hero />
             <InfinityScroll />
+            <Text1/>
             <Servicios />
             <Hese />
             <Socios />

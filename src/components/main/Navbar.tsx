@@ -59,7 +59,7 @@ export default function Navbar() {
                     }
                 </ul>
                 <div className="menu-container hidden w-full h-full flex items-center menu">
-                    <img src="/anomaly-image/hamburger.png" alt="Menu" className="w-8 h-auto z-100"/>
+                    <img src="/anomaly-image/hamburger.webp" alt="Menu" className="w-8 h-auto z-100"/>
                 </div>
                 <div className="cta-container flex items-center rounded-xl p-2">
                     <a href="/contact" className="callToAction flex w-40 h-7 p-3.5 justify-center items-center gap-2.5 rounded-lg font-normal border bg-purple-500 bg-opacity-40 inset-box-shadow text-light-color no-underline backdrop-filter blur-7">Contactanos</a>
