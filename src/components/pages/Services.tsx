@@ -10,12 +10,9 @@ export default function Services() {
             <h1 className='hidden'>Servicios</h1>
             <BackToTop />
             <div className='flex flex-col py-12 container'>
-                <section className='flex justify-between h-[50vh] py-2 max-sm:flex-col max-sm:h-full max-sm:gap-4'>
+                <section className='flex justify-between h-[10vh] py-2 max-sm:flex-col max-sm:h-full max-sm:gap-4'>
                     <div className='flex flex-start max-sm:flex-col'>
-                        <h3 className='text-stone-300 text-6xl text-center font-bold px-3 max-sm:p-0 max-sm:text-xl'>Somos una agencia digital de multiservicios</h3>
-                    </div>
-                    <div className='flex flex-end max-sm:flex-col'>
-                        <h3 className='text-stone-300 text-5xl text-center font-base px-3 flex items-end max-sm:p-0 max-sm:text-xl'>Nos apaciona el apoyar p nuestros clientes y llevarlos al proximo nivel</h3>
+                        <h3 className='text-stone-300 text-6xl text-center font-bold px-3 max-sm:p-0 max-sm:text-4xl'>Nuestros servicios</h3>
                     </div>
                 </section>
                 <section id='web' className="flex flex-col">
