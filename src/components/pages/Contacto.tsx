@@ -1,7 +1,44 @@
 import BackToTop from '../general/BackToTop';
+import React from 'react';
+import Swal from 'sweetalert2';
 import '../styles/contacto.css';
 
 export default function Contacto() {
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "5d293c0b-9199-479e-838e-ff295ca00a23");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            Swal.fire({
+                title: "Bien Hecho!",
+                text: "Dentro de breve estarémos en contacto contigo.",
+                icon: "success",
+                background: '#1d1f25',
+              });
+            event.target.reset();
+        } else {
+        console.log("Error", data);
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Algo no salio bien!, vuelve a intentarlo.",
+            background: '#1d1f25',
+          });
+        setResult(data.message);
+        }
+    };
     return (
         <main className='w-screen max-sm:w-screen overflow-x-hidden'>
             <div className="flex items-center justify-center flex-col gap-1 contacto max-sm:w-screen">
@@ -16,14 +53,14 @@ export default function Contacto() {
                         <div className="text w-4/5 h-4/5 flex flex-col justify-center items-center gap-4">
                             <h2 className="text-4xl text-white">Contacto</h2>
                             <p className="text-white text-center">Tienes ideas que quieres digitalizar? Envianos tu informacion para estar en contacto.</p>
-                            <form className="form-style w-4/5 flex flex-col items-center gap-4" action="https://formspree.io/f/xldrkdaq" method="POST">
+                            <form className="form-style w-4/5 flex flex-col items-center gap-4" onSubmit={onSubmit}>
                                 <input type="text" name="name" placeholder="Nombre" className="w-full h-10 px-4 rounded-lg bg-[#1d1f25] border border-[#1d1f25] text-white placeholder-[#6b6b6b] focus:outline-none" required />
                                 <input type="text" name="lastName" placeholder="Apellido" className="w-full h-10 px-4 rounded-lg bg-[#1d1f25] border border-[#1d1f25] text-white placeholder-[#6b6b6b] focus:outline-none" required />
                                 <input type="email" name="email" placeholder="Correo" className="w-full h-10 px-4 rounded-lg bg-[#1d1f25] border border-[#1d1f25] text-white placeholder-[#6b6b6b] focus:outline-none" required />
                                 <input type="tel" name="telefono" placeholder="Telefono" className="w-full h-10 px-4 rounded-lg bg-[#1d1f25] border border-[#1d1f25] text-white placeholder-[#6b6b6b] focus:outline-none" required />
                                 <input type="text" name="empresa" placeholder="Empresa" className="w-full h-10 px-4 rounded-lg bg-[#1d1f25] border border-[#1d1f25] text-white placeholder-[#6b6b6b] focus:outline-none" required />
                                 <input type="url" name="pagina" placeholder="URL de la empresa" className="w-full h-10 px-4 rounded-lg bg-[#1d1f25] border border-[#1d1f25] text-white placeholder-[#6b6b6b] focus:outline-none" required />
-                                <input type="text" name="rol" placeholder="Cual es tu rol en la empresa?" className="w-full h-10 px-4 rounded-lg bg-[#1d1f25] border border-[#1d1f25] text-white placeholder-[#6b6b6b] focus:outline-none" required />
+                                <input type="text" name="rol" placeholder="Rol en la empresa" className="w-full h-10 px-4 rounded-lg bg-[#1d1f25] border border-[#1d1f25] text-white placeholder-[#6b6b6b] focus:outline-none" required />
                                 <textarea name="message" id="message" cols={30} rows={10} placeholder="Mensaje" className="w-full h-32 px-4 py-2 rounded-lg bg-[#1d1f25] border border-[#1d1f25] text-white placeholder-[#6b6b6b] focus:outline-none"></textarea>
                                 <button
                                     className="relative overflow-hidden rounded-lg h-12 group hover:animate-pulse hover:shadow-lg hover:scale-105 transition duration-500 before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-pink-400 before:via-purple-400 before:to-indigo-400"
