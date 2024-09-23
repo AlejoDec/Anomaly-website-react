@@ -4,12 +4,12 @@ import Swal from 'sweetalert2';
 import '../styles/contacto.css';
 
 export default function Contacto() {
-    const [result, setResult] = React.useState("");
+    // Removed unused state variable 'result'
 
-    const onSubmit = async (event) => {
+    const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        setResult("Sending....");
-        const formData = new FormData(event.target);
+        // Removed unused state update
+        const formData = new FormData(event.target as HTMLFormElement);
 
         formData.append("access_key", "5d293c0b-9199-479e-838e-ff295ca00a23");
 
@@ -27,7 +27,7 @@ export default function Contacto() {
                 icon: "success",
                 background: '#1d1f25',
               });
-            event.target.reset();
+            (event.target as HTMLFormElement).reset();
         } else {
         console.log("Error", data);
         Swal.fire({
@@ -36,7 +36,7 @@ export default function Contacto() {
             text: "Algo no salio bien!, vuelve a intentarlo.",
             background: '#1d1f25',
           });
-        setResult(data.message);
+        // Removed unused state update
         }
     };
     return (
