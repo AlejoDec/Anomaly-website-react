@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom';
+import { ToTop } from '../general/ToTop';
 import { useEffect } from 'react';
-import { Link } from '../../main/Link';
 import '../styles/Navbar.css';
 
 export default function Navbar() {
@@ -12,36 +13,47 @@ export default function Navbar() {
     ]
 
     useEffect(() => {
-        const menuButton = document.querySelector('.menu') as HTMLElement | null;
-        const ulButton = document.querySelectorAll('.listStyle');
-        const ul = document.querySelector('ul') as HTMLElement | null;
+        const handleResize = () => {
+            if (window.innerWidth <= 450) {
+                const menuButton = document.querySelector('.menu') as HTMLElement | null;
+                const ulButton = document.querySelectorAll('.listStyle');
+                const ul = document.querySelector('ul') as HTMLElement | null;
 
-        const handleMenuClick = () => {
-            if (ul && menuButton) {
-                ul.style.left = '0';
-                menuButton.style.display = 'none';
-                console.log('click');
+                const handleMenuClick = () => {
+                    if (ul && menuButton) {
+                        ul.style.left = '0';
+                        menuButton.style.display = 'none';
+                        console.log('click');
+                    }
+                };
+
+                const handleUlButtonClick = () => {
+                    if (ul && menuButton) {
+                        ul.style.left = '-100%';
+                        menuButton.style.display = 'flex';
+                        console.log('hidde');
+                    }
+                };
+
+                menuButton?.addEventListener('click', handleMenuClick);
+                ulButton.forEach((button) => {
+                    button.addEventListener('click', handleUlButtonClick);
+                });
+
+                return () => {
+                    menuButton?.removeEventListener('click', handleMenuClick);
+                    ulButton.forEach((button) => {
+                        button.removeEventListener('click', handleUlButtonClick);
+                    });
+                };
             }
         };
 
-        const handleUlButtonClick = () => {
-            if (ul && menuButton) {
-                ul.style.left = '-100%';
-                menuButton.style.display = 'flex';
-                console.log('hidde');
-            }
-        };
-
-        menuButton?.addEventListener('click', handleMenuClick);
-        ulButton.forEach((button) => {
-            button.addEventListener('click', handleUlButtonClick);
-        });
+        handleResize(); // Initial check
+        window.addEventListener('resize', handleResize);
 
         return () => {
-            menuButton?.removeEventListener('click', handleMenuClick);
-            ulButton.forEach((button) => {
-                button.removeEventListener('click', handleUlButtonClick);
-            });
+            window.removeEventListener('resize', handleResize);
         };
     }, []);
 
@@ -53,7 +65,7 @@ export default function Navbar() {
                     {
                         Object.entries(navItems).map(([key, item]) => (
                             <li className="listContainer my-4 max-sm:my-0" key={key}>
-                                <Link to={item.path} className="listStyle">{item.label}</Link>
+                                <Link to={item.path} className="listStyle" onClick={ToTop}>{item.label}</Link>
                             </li>
                         ))
                     }

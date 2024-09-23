@@ -1,6 +1,15 @@
+import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
+import { ToTop } from '../general/ToTop';
 
 export default function Footer() {
+
+    const rutas = [
+        { label: 'Inicio', path: '/' },
+        { label: 'Nosotros', path: '/about' },
+        { label: 'Servicios', path: '/services' },
+        { label: 'Contacto', path: '/contact' }
+    ]
 
     return (
         
@@ -13,6 +22,18 @@ export default function Footer() {
                     <p className='font-base text-lg max-sm:text-center'>Agencia de desarrollo creativo</p>
                 </div>
                 <div className='flex gap-4'>
+                <div className='flex flex-col max-sm:text-center'>
+                        <h3 className='font-bold'>Compañia</h3>
+                        <ul className='border-none flex flex-col'>
+                            {
+                                rutas.map((ruta, index) => (
+                                    <li key={index}>
+                                        <Link to={ruta.path} onClick={ToTop}>{ruta.label}</Link>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
                     <div className='flex flex-col max-sm:text-center'>
                         <h3 className='font-bold'>Legal</h3>
                         <ul className='border-none'>
