@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
+import { useState } from "react"
+// import { useParams } from "react-router-dom"
 import app from "../../firebaseConfig"
-import { getDatabase, ref, get, set} from "firebase/database"
+import { getDatabase, ref, get, set, push } from "firebase/database"
 
 interface Post {
     title: string;
@@ -38,11 +38,11 @@ export default function Dashboard() {
             <h1>DashBorad Anomaly</h1>
             <button onClick={getData} className="bg-white text-black">Get Data</button>
             <div>
-            {Object.keys(dataArray).map((key) => {
+            {dataArray.map((post, index) => {
                     return (
-                        <div key={key}>
-                            <h1>{dataArray[key].title}</h1>
-                            <p>{dataArray[key].text}</p>
+                        <div key={index}>
+                            <h1>{post.title}</h1>
+                            <p>{post.text}</p>
                         </div>
                     )
                 })}

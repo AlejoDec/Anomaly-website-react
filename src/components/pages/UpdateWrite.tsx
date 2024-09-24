@@ -3,11 +3,7 @@ import app from "../../firebaseConfig"
 import { getDatabase, ref, get, set} from "firebase/database"
 import { useParams } from "react-router-dom"
 
-interface Post {
-    title: string;
-    text: string;
-    postId: string;
-}
+
 
 export default function UpdateRead() {
 
@@ -15,7 +11,7 @@ export default function UpdateRead() {
 
     const [titleInput, setTitleInput] = useState("");
     const [textInput, setTextInput] = useState("");
-    const [dataArray, setDataArray] = useState<Post[]>([])
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -30,16 +26,7 @@ export default function UpdateRead() {
         fetchData();
     },[postId])
 
-    const getData = async () => {
-        const db = getDatabase(app)
-        const data = await get(ref(db, "posts"))
-        const myData = data.val()
-        const temporaryArray = Object.keys(myData).map(myFireID => ({
-            ...myData[myFireID],
-            postId: myFireID
-        }))
-        setDataArray(temporaryArray)
-    }
+
 
     const saveData = async () => {
         const db = getDatabase(app)
@@ -56,7 +43,7 @@ export default function UpdateRead() {
     return (
         <div>
             <h1>Update</h1>
-            <button onClick={getData}>Get Data</button>
+            {/* <button onClick={getData}>Get Data</button> */}
             <input type="text" className="text-black" value={titleInput} onChange={(e) => setTitleInput(e.target.value)}/>
 
             <input type="text" value={textInput} onChange={(e) => setTitleInput(e.target.value)}/>

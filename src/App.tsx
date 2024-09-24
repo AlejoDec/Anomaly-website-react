@@ -5,7 +5,7 @@ import NotFound from './components/pages/404';
 import About from './components/pages/About';
 import Contacto from './components/pages/Contacto';
 import Services from './components/pages/Services';
-import Dashboard from './components/pages/Dashboard';
+// import Dashboard from './components/pages/Dashboard';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function App() {
