@@ -11,7 +11,7 @@ export default function Contacto() {
         // Removed unused state update
         const formData = new FormData(event.target as HTMLFormElement);
 
-        formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
+        formData.append("access_key", "3024acba-1f14-4549-aa5a-7b37decad14d");
 
         const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
