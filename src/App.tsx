@@ -5,10 +5,7 @@ import NotFound from './components/pages/404';
 import About from './components/pages/About';
 import Contacto from './components/pages/Contacto';
 import Services from './components/pages/Services';
-import Write from './components/pages/Write';
-import Read from './components/pages/Read';
-import UpdateWrite from './components/pages/UpdateWrite';
-import UpdateRead from './components/pages/UpdateWrite';
+import Dashboard from './components/pages/Dashboard';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function App() {
@@ -20,10 +17,7 @@ export default function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contacto />} />
         <Route path='/services' element={<Services />} />
-        <Route path='/write' element={<Write />} />
-        <Route path='/read' element={<Read />} />
-        <Route path='/update' element={<UpdateRead />} />
-        <Route path='/update/:postId' element={<UpdateWrite />} />
+        {/* <Route path='/dashboard' element={<Dashboard />} /> */}
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

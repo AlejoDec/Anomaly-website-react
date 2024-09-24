@@ -32,9 +32,9 @@ export default function UpdateRead() {
             <div className="flex flex-col gap-4">
                 {dataArray.map((post) => {
                     return (
-                        <div key={post.postId} className="text-stone-300 flex flex-col">
-                            <h1>{post.title}</h1>
-                            <p>{post.text}</p>
+                        <div key={post.postId} className="flex flex-col w-screen">
+                            <h1 className="w-2/4 font-bold text-xl text-stone-300">{post.title}</h1>
+                            <p className="w-2/4 font-base text-lg text-stone-300">{post.text}</p>
                             <button onClick={() => navigate(`/update/${post.postId}`)} >Update</button>
                         </div>
                     )}
