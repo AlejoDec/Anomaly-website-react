@@ -1,8 +1,8 @@
 import '../styles/Card2.css';
 
 interface Props {
-    title: string;
-    description: string;
+    title: React.ReactNode ;
+    description: React.ReactNode ;
     image: string;
 }
 

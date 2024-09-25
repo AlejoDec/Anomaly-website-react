@@ -1,3 +1,4 @@
+import { FormattedMessage } from 'react-intl';
 import '../styles/404.css';
 
 export default function NotFound() {
@@ -5,8 +6,12 @@ export default function NotFound() {
         <div className="overflow-hidden">
             <div className="co w-screen h-screen flex flex-col items-center justify-center">
                 <div className="flex flex-col gap-4">
-                    <p className="text-stone-300 text-6xl text-center">Te has perdido</p>
-                    <h1 className="text-stone-300 text-5xl text-center">404</h1>
+                    <p className="text-stone-300 text-6xl text-center">
+                        <FormattedMessage id='404.txt' defaultMessage='¡Oh no! Parece que te has perdido' />
+                    </p>
+                    <h1 className="text-stone-300 text-5xl text-center">
+                        <FormattedMessage id='404.title' defaultMessage='404' />
+                    </h1>
                 </div>
                 <div className="scene">
                     <div className="forest">

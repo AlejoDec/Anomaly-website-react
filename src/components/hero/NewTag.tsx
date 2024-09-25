@@ -1,3 +1,4 @@
+import { FormattedMessage } from 'react-intl';
 import '../styles/NewTag.css';
 
 export default function NewTag() {
@@ -8,7 +9,12 @@ export default function NewTag() {
                     <p className='text-black text-center flex flex-col justify-center font-bold text-xs px-1'>NEW</p>
                 </div>
                 <div className='font-kanit text-sm text-purple-500 font-light'>
-                    <p>Lo que le faltaba a tu negocio ah llegado</p>
+                    <p>
+                        <FormattedMessage
+                            id="hero.tag"
+                            defaultMessage="Lo que le faltaba a tu negocio ah llegado"
+                        />
+                    </p>
                 </div>
             </div>
         </div>

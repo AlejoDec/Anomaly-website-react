@@ -4,14 +4,14 @@ const Miembros = [
     {
         nombre: "Alejandro ",
         apellidos: "Hurtado Alvarez",
-        rol: "CTO - Director de tecnología",
+        rol: "CTO",
         img: "/miembros/alejandro.webp",
         frase: "La tecnología es el futuro, y nosotros somos el futuro de la tecnología"
     },
     {
         nombre: "Juan Diego ",
         apellidos: "Calle Giraldo",
-        rol: "CEO - Director ejecutivo",
+        rol: "CEO",
         img: "/miembros/Juan.webp",
         frase: "Dale siempre una oportunidad a lo mejor, aunque parezca amenazador"
     },
@@ -25,14 +25,14 @@ const Miembros = [
     {
         nombre: "Yefferson ",
         apellidos: "Muñoz Uribe",
-        rol: "Director Creativo",
+        rol: "CDO",
         img: "/miembros/jefferson.webp",
         frase: "Si puedes soñarlo, podemos hacerlo"
     },
     {
         nombre: "Camilo",
         apellidos: "Miranda Ribon",
-        rol: "Desarrollador Full Stack",
+        rol: "Full Stack",
         img: "/miembros/camilo.webp",
         frase: "",
     }

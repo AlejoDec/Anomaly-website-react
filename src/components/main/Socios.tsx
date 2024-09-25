@@ -1,3 +1,4 @@
+import { FormattedMessage } from 'react-intl';
 import '../styles/Socios.css';
 
 const clientes = [
@@ -20,8 +21,12 @@ export default function Socios() {
         <div className="w-screen h-screen overflow-hidden socios max-sm:h-[150vh]">
             <div className="css-selector flex flex-col justify-center items-center gap-5 w-full h-full shrink-0 -z-1 w-screen">
                 <div className="w-[90%] flex flex-col justify-center items-center gap-5">
-                <h2 className="text-stone-300 text-8xl self-start opacity-35 font-bold">CLIE</h2>
-                <p className="text-stone-300 text-center text-4xl not-italic font-light leading-8">Empresas que que confiaron en nosotros y tomaron la mejor desición </p><br />
+                <h2 className="text-stone-300 text-8xl self-start opacity-35 font-bold">
+                    <FormattedMessage id='client.title' defaultMessage='CLIE' />
+                </h2>
+                <p className="text-stone-300 text-center text-4xl not-italic font-light leading-8">
+                    <FormattedMessage id='client.txt' defaultMessage='Empresas que confiaron en nosotros y tomaron la mejor desicion' />
+                </p><br />
                 <div className="sociosContainer flex justify-center items-center gap-10">
                     {
                         clientes.map(socio => (
@@ -31,7 +36,9 @@ export default function Socios() {
                         ))
                     }
                 </div>
-                <h2 className="text-stone-300 text-8xl self-end opacity-35 font-bold">NTES</h2>
+                <h2 className="text-stone-300 text-8xl self-end opacity-35 font-bold">
+                    <FormattedMessage id='client.title2' defaultMessage='NTES' />
+                </h2>
                 </div>
             </div>
         </div>

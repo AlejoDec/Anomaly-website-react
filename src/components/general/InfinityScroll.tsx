@@ -1,3 +1,4 @@
+import { FormattedMessage } from 'react-intl';
 import '../styles/InfinityScroll.css';
 
 export default function InfinityScroll() {
@@ -8,7 +9,7 @@ export default function InfinityScroll() {
                 <p className="max-w-none text-stone-300 text-4xl">WEB</p>
                 <p className="max-w-none text-stone-300 text-4xl">MARKETING</p>
                 <p className="max-w-none text-stone-300 text-4xl">DIGITAL</p>
-                <p className="max-w-none text-stone-300 text-4xl">DISEÑO</p>
+                <p className="max-w-none text-stone-300 text-4xl"><FormattedMessage id='scroll.desing' defaultMessage='DISEÑO' /></p>
                 <p className="max-w-none text-stone-300 text-4xl">UI/UX</p>
             </div>
             <div className="flex space-x-16 animate-loop-scroll ">
@@ -16,7 +17,7 @@ export default function InfinityScroll() {
                 <p className="max-w-none text-stone-300 text-4xl">WEB</p>
                 <p className="max-w-none text-stone-300 text-4xl">MARKETING</p>
                 <p className="max-w-none text-stone-300 text-4xl">DIGITAL</p>
-                <p className="max-w-none text-stone-300 text-4xl">DISEÑO</p>
+                <p className="max-w-none text-stone-300 text-4xl"><FormattedMessage id='scroll.desing' defaultMessage='DISEÑO' /></p>
                 <p className="max-w-none text-stone-300 text-4xl">UI/UX</p>
             </div>
             <div className="flex space-x-16 animate-loop-scroll " aria-hidden="true">
@@ -24,7 +25,7 @@ export default function InfinityScroll() {
                 <p className="max-w-none text-stone-300 text-4xl">WEB</p>
                 <p className="max-w-none text-stone-300 text-4xl">MARKETING</p>
                 <p className="max-w-none text-stone-300 text-4xl">DIGITAL</p>
-                <p className="max-w-none text-stone-300 text-4xl">DISEÑO</p>
+                <p className="max-w-none text-stone-300 text-4xl"><FormattedMessage id='scroll.desing' defaultMessage='DISEÑO' /></p>
                 <p className="max-w-none text-stone-300 text-4xl">UI/UX</p>
             </div>
         </div>
