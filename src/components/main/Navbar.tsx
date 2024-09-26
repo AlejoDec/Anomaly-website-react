@@ -88,7 +88,7 @@ export default function Navbar() {
                     </button>
                 </div>
                 <div className="cta-container flex items-center rounded-xl p-2">
-                    <a href="/contact" className="callToAction flex w-40 h-7 p-3.5 justify-center items-center gap-2.5 rounded-lg font-normal border bg-purple-500 bg-opacity-40 inset-box-shadow text-light-color no-underline backdrop-filter blur-7"><FormattedMessage id="navbar.cta" defaultMessage='Contactanos' /></a>
+                    <Link href="/contact" className="callToAction flex w-40 h-7 p-3.5 justify-center items-center gap-2.5 rounded-lg font-normal border bg-purple-500 bg-opacity-40 inset-box-shadow text-light-color no-underline backdrop-filter blur-7"><FormattedMessage id="navbar.cta" defaultMessage='Contactanos' /></Link>
                 </div>
             </nav>
         </div>
