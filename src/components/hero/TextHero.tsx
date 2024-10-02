@@ -14,7 +14,7 @@ export default function TextHero() {
                     defaultMessage="Lo diferente nos diferencia"
                 />
             </h2>
-            <p className="text-4xl font-light text-center w-[70%] text-stone-300">
+            <p style={{ whiteSpace: "pre-line" }} className="text-4xl font-light text-center w-[70%] text-stone-300">
                 <FormattedMessage
                     id="hero.text"
                     defaultMessage="En Anomaly, creemos que lo diferente nos diferencia. Por eso, creamos soluciones únicas y personalizadas para cada cliente."

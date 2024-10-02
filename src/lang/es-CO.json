@@ -1,13 +1,13 @@
 {
+
     "navbar.home": "Inicio",
     "navbar.about": "Nosotros",
     "navbar.services": "Servicios",
     "navbar.contact": "Contacto",
     "navbar.cta": "Contactanos",
-
-    "hero.tag": "Lo que le faltaba a tu negocio ah llegado",
+    "hero.tag": "Medellin - Colombia & Estados unidos",
     "hero.subTitle": "lo diferente nos diferencia",
-    "hero.text": "En la industria la conformidad es moneda corriente, mismas ideas, mismos resultados... mismas soluciones",
+    "hero.text": "En la industria la conformidad es moneda corriente, \n mismas ideas, mismos resultados... mismas soluciones",
     "hero.cta": "¿Quieres ser diferente?",
 
     "scroll.desing": "DISEÑO",
@@ -38,8 +38,8 @@
     "about.team": "Conoce el equipo",
     "about.team2": "HEY, HOLA SOMOS ANOMALY",
     "about.team3": "Somos un equipo con raices en Medellin, que ha evolucionado y se ah expandido a diversas ciudades de Colombia, y que ahora tiene la ambicion de alcanzar mercados internacionales.En Anomaly, nos enorgullece nuestra dedicacion a convertirnos en referentes en el ambito del marketing digtial y el desarrollo web.   Nuestro compromiso es acompañar a las empresa en su transicion al mundo digital, ayudandolas a construir una identidad virtual solida y a mejorar su rendimiento en linea. Ofrecemos soluciones personalizadas para cada negocio, adaptandonos a sus necesidades especificas y brindando un soporte continuo para asegurar su exito en el entorno digital en constante evolucion. Trabajamos con pasion y profesionalismo para garantizar que nuestros clientes no solo se adapten, sino que prosperen en el competitivo mundo digital.",
-    "about.cta": "Ya que nos conoces, ¿quieres trabajar con nosotros?",
-    "cta.about": "¿Quieres trabajar con nosotros?",
+    "about.cta": "Somos la mejor agencia de desarrollo en Medellín y Colombia. Transformamos tu marca con soluciones creativas y estratégicas. Únete a quienes ya confían en nosotros. ",
+    "cta.about": "¡Trabaja con nosotros y haz crecer tu negocio!",
 
     "success.title": "¡Bien hecho!",
     "success.text": "Tu mensaje ha sido enviado con éxito, pronto nos pondremos en contacto contigo",
@@ -61,7 +61,7 @@
     "services.titlePage": "SERVICIOS",
     "services.titleContent": "Nuestros servicios",
     "services.web": "Desarrollo web",
-    "services.webContent": "Creamos sitios web funcionales y atractivos que ofrecen una experiencia de usuario excepcional. Ya sea un sitio informativo, una tienda online o una plataforma personalizada, nuestro equipo de desarrolladores transforma tus ideas en realidad.",
+    "services.webContent": "Creamos sitios web funcionales y atractivos que ofrecen una experiencia de usuario excepcional.Ya sea un sitio informativo, una tienda online o una plataforma personalizada, nuestro equipo de desarrolladores transforma tus ideas en realidad.",
     "web.service1": "Diseño UI/UX",
     "services.apps": "Desarrollo de apps",
     "services.appsContent": "Diseñamos y desarrollamos aplicaciones móviles a medida para que tu negocio esté al alcance de tus clientes en todo momento. Desde aplicaciones de comercio electrónico hasta soluciones personalizadas para mejorar la productividad empresarial, nuestro equipo de expertos utiliza las últimas tecnologías para crear apps funcionales, intuitivas y seguras.",
@@ -89,4 +89,5 @@
     "footer.contact": "Contacto",
     "ul.title1": "Compañia",
     "terms": "Términos y condiciones"
+    
 }

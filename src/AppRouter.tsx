@@ -14,11 +14,11 @@ export default function AppRouter() {
         <Navbar />
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contacto />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/404' element={<NotFound />} />
-          <Route path='*' element={<Navigate to='/404' />} />
+          <Route path='/about/' element={<About />} />
+          <Route path='/contact/' element={<Contacto />} />
+          <Route path='/services/' element={<Services />} />
+          <Route path='/404/' element={<NotFound />} />
+          <Route path='*' element={<Navigate to='/404/' />} />
         </Routes>
         <Footer />
       </Router>

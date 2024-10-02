@@ -12,7 +12,7 @@ export default function NewTag() {
                     <p>
                         <FormattedMessage
                             id="hero.tag"
-                            defaultMessage="Lo que le faltaba a tu negocio ah llegado"
+                            defaultMessage="Medellin - Colombia & Estados unidos"
                         />
                     </p>
                 </div>

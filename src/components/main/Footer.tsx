@@ -18,7 +18,7 @@ export default function Footer() {
             <div className='footer-content-2 flex justify-between px-20 py-8 max-sm:flex-col max-sm:gap-4'></div>
             <div className='footer-content-2 flex justify-between px-20 py-8 max-sm:flex-col max-sm:gap-4'>
                 <div className='flex flex-col max-sm:items-center'>
-                    <img src="/anomaly-image/logoBlanco.webp" alt="Anomaly-logo" className='w-[75px]' />
+                    <img src="/anomaly-image/logo-morado-navbar.svg" alt="Anomaly-logo" />
                     <h2 className='font-bold text-[80px] max-sm:text-[20px] max-sm:text-center'>Anomaly</h2>
                     <p className='font-base text-lg max-sm:text-center'>
                         <FormattedMessage id='footer.txt1' defaultMessage='Agencia de desarrollo creativo' />

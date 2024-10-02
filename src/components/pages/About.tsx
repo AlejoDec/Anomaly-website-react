@@ -68,11 +68,11 @@ export default function About() {
                 </section>
                 <section className="cta-contact flex flex-col items-center justify-center">
                 <div className="bgcont w-[90vw] h-[60vh] flex flex-col items-center justify-center gap-4 p-4 rounded-xl">
-                    <h3 className="text-black text-4xl text-center">
-                        <FormattedMessage id='about.cta' defaultMessage='Ya que nos conoces, ¿quieres trabajar con nosotros?' />
+                    <h3 className="text-black text-4xl px-8 text-center">
+                        <FormattedMessage id='about.cta' defaultMessage='Somos la mejor agencia de desarrollo en Medellín y Colombia. Transformamos tu marca con soluciones creativas y estratégicas. Únete a quienes ya confían en nosotros. ' />
                     </h3> 
                     <CallToAction href="/contact" classNameName="text-stone-800 p-2 text-xl hover:text-white max-sm:text-sm" >
-                        <FormattedMessage id="cta.about" defaultMessage='¿Quieres trabajar con nosotros?' />
+                        <FormattedMessage id="cta.about" defaultMessage='¡Trabaja con nosotros y haz crecer tu negocio!' />
                     </CallToAction>
                 </div>
                 </section>

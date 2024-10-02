@@ -65,7 +65,7 @@ export default function Navbar() {
         <div className="w-screen flex justify-center">
             <nav className="w-4/5 max-h-16 flex justify-between aling-center px-6 py-2 text-white gap-12">
                 <Link to="/">
-                    <img src="/anomaly-image/logo-morado.svg" alt="Logo-Anomaly" className="logoImga w-44 h-full"/>
+                    <img src="/anomaly-image/logo-morado-navbar.svg" alt="Logo-Anomaly" className="logoImga h-full"/>
                 </Link>
                 <ul className="flex py-0.5 px-3 justify-center items-center gap-7 rounded-full list-none w-2/4 max-sm:w-screen max-sm:rounded-none max-sm:gap-0 ul-style">
                     {
@@ -81,10 +81,10 @@ export default function Navbar() {
                 </div>
                 <div className='text-stone-300 flex gap-4 max-sm:flex-col max-sm:items-start'>
                     <button onClick={() => language?.setLanguage('es')}>
-                        <img src="/languages/spain.png" alt="spain" className='w-[24px]' />
+                        <img src="/languages/spain.png" alt="spain" />
                     </button>
                     <button onClick={() => language?.setLanguage('en')}>
-                        <img src="/languages/united-kingdom.png" alt="united-kingdom" className='w-[24px]' />
+                        <img src="/languages/united-kingdom.png" alt="united-kingdom" />
                     </button>
                 </div>
                 <div className="cta-container flex items-center rounded-xl p-2">
