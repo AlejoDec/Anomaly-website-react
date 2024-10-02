@@ -20,7 +20,7 @@ export default function TextHero() {
                     defaultMessage="En Anomaly, creemos que lo diferente nos diferencia. Por eso, creamos soluciones únicas y personalizadas para cada cliente."
                 />
             </p>
-            <CTAbutton href={"/contact"} className="text-stone-800 p-2 text-xl hover:text-white max-sm:text-base">
+            <CTAbutton href={"/contact"} classNameName="text-stone-800 p-2 text-xl hover:text-white max-sm:text-base">
                 <FormattedMessage id="hero.cta" defaultMessage='¿Quieres ser diferente?' />
             </CTAbutton>
         </div>

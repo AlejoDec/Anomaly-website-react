@@ -71,7 +71,7 @@ export default function About() {
                     <h3 className="text-black text-4xl text-center">
                         <FormattedMessage id='about.cta' defaultMessage='Ya que nos conoces, ¿quieres trabajar con nosotros?' />
                     </h3> 
-                    <CallToAction href="/contact" className="text-stone-800 p-2 text-xl hover:text-white max-sm:text-sm" >
+                    <CallToAction href="/contact" classNameName="text-stone-800 p-2 text-xl hover:text-white max-sm:text-sm" >
                         <FormattedMessage id="cta.about" defaultMessage='¿Quieres trabajar con nosotros?' />
                     </CallToAction>
                 </div>
