@@ -1,12 +1,27 @@
 import { Link } from 'react-router-dom';
 import '../styles/CTAbutton.css';
 
-export default function CTAbutton({ href, className, children }: { href: string, className?: string, children: React.ReactNode }) {
+export default function CTAbutton({ href, classNameName, children }: { href: string, classNameName?: string, children: React.ReactNode }) {
     return (
-        <button className="cursor-pointer text-white font-bold relative text-[14px] w-fit h-[3em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700">
-            <Link to={href} className={className}>
+        /* From Uiverse.io by Masoodaykhan */ 
+        <button
+        className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-[#A369BC] backdrop-blur-md lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#8C3887] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+        type="submit"
+        >
+            <Link to={href} className={classNameName}>
                 {children}
             </Link>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 19"
+            className="w-8 h-8 justify-end bg-gray-50 group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
+        >
+            <path
+            className="fill-gray-800 group-hover:fill-gray-800"
+            d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+            ></path>
+        </svg>
         </button>
+
     )
 }

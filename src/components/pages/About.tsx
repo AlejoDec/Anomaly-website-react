@@ -68,7 +68,7 @@ export default function About() {
                 </section>
                 <section className="cta-contact flex flex-col items-center justify-center">
                 <div className="bgcont w-[90vw] h-[60vh] flex flex-col items-center justify-center gap-4 p-4 rounded-xl">
-                    <h3 className="text-stone-300 text-4xl text-center">
+                    <h3 className="text-black text-4xl text-center">
                         <FormattedMessage id='about.cta' defaultMessage='Ya que nos conoces, ¿quieres trabajar con nosotros?' />
                     </h3> 
                     <CallToAction href="/contact" className="text-stone-800 p-2 text-xl hover:text-white max-sm:text-sm" >

@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: kanit, sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+html,
+:host {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   background-color: #282a2b;
+}
+
+div:where(.swal2-icon) {
+  user-select: none;
 }

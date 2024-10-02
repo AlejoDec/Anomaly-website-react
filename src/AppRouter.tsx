@@ -6,7 +6,7 @@ import About from './components/pages/About';
 import Contacto from './components/pages/Contacto';
 import Services from './components/pages/Services';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 export default function AppRouter() {
   return (
@@ -17,7 +17,8 @@ export default function AppRouter() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contacto />} />
           <Route path='/services' element={<Services />} />
-          <Route path='*' element={<NotFound />} />
+          <Route path='/404' element={<NotFound />} />
+          <Route path='*' element={<Navigate to='/404' />} />
         </Routes>
         <Footer />
       </Router>

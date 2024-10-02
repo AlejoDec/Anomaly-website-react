@@ -35,6 +35,20 @@ const Miembros = [
         rol: "Full Stack",
         img: "/miembros/camilo.webp",
         frase: "",
+    },
+    {
+        nombre: "Santiago",
+        apellidos: "Piedrahita Perez",
+        rol: "Full Stack",
+        img: "/miembros/santiago.webp",
+        frase: "",
+    },
+    {
+        nombre: "Emmanuel",
+        apellidos: "Davila",
+        rol: "Full Stack",
+        img: "/miembros/emmanuel.webp",
+        frase: "",
     }
 ]
 
@@ -44,7 +58,7 @@ export default function Miembro() {
             <div className="flex flex-col items-center gap-4 rounded-xl bg-[#000] w-full h-[341px] p-2">
                 <article className="relative w-full">
                     <img src="/miembros/anonimo.webp" alt="anonimus" className="rounded-xl text-stone-300" />
-                    {/* <img src={miembro.img} alt={miembro.nombre}> */}
+                    {/* <img src={miembro.img} alt={miembro.nombre} /> */}
                 </article>
                 <h4 className="text-stone-400 text-xl text-center">{miembro.nombre}<br />{miembro.apellidos}</h4>
                 <p className="text-stone-400 text-center">{miembro.rol}</p>

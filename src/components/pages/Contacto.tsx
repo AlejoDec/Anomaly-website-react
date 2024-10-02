@@ -45,9 +45,9 @@ export default function Contacto() {
             <div className="flex items-center justify-center flex-col gap-1 contacto max-sm:w-screen">
                 <div className="contact flex w-full p-7 items-center">
                     <BackToTop />
-                    <section className="imgC w-full h-auto">
-                        <div className="imgContact">
-                            <img src="/contact/contact.webp" alt="contacto" className="w-full rounded-xl imgStyle" />
+                    <section className=" w-full h-auto">
+                        <div className="flex flex-column justify-center">
+                            <img src="/contact/contacto.webp" alt="contacto" className="w-[500px] rounded-xl imgStyle" />
                         </div>
                     </section>
                     <section className="w-full h-auto flex justify-center items-center max-sm:w-screen">

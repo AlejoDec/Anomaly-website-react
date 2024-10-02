@@ -29,8 +29,8 @@ export default function Socios() {
                 </p><br />
                 <div className="sociosContainer flex justify-center items-center gap-10">
                     {
-                        clientes.map(socio => (
-                            <a href={socio.url} target="_blank" className="sociosCard flex justify-center items-center shrink-0 rounded-md">
+                        clientes.map((socio, index )=> (
+                            <a key={index} href={socio.url} target="_blank" className="sociosCard flex justify-center items-center shrink-0 rounded-md">
                                 <img src={socio.image} alt={socio.name} className="sociosImage w-1/2 shrink-0 opacity-50" />
                             </a>
                         ))

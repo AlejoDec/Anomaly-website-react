@@ -3,7 +3,7 @@
 :root {
   --gradient-primary: linear-gradient(to right top, #120414, #1a051d, #210624, #29052c, #310134);
   --gradient-secondary: linear-gradient(to right top, #340537, #4b094c, #650c61, #800f76, #9d108b);
-  --gradient-contact: linear-gradient(to right bottom, #471e76, #4b227a, #4f277f, #542b83, #582f88, #593188, #593287, #5a3487, #583481, #55347c, #533476, #503471);
+  --gradient-contact: linear-gradient(to right bottom, #a67cdb, #b083e0, #ba8ae5, #c491ea, #ce98ef, #d19af0, #d49cf1, #d79ef2, #d39aeb, #cf96e5, #cb92de, #c78ed8);
 }
 
 .text-container, .text-style {

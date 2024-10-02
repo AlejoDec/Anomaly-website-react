@@ -41,9 +41,9 @@ export default function Footer() {
                     </div>
                     <div className='flex flex-col max-sm:text-center'>
                         <h3 className='font-bold'>Legal</h3>
-                        <ul className='border-none'>
+                        <div className='border-none'>
                             <FormattedMessage id='terms' defaultMessage='Terminos y servicios' />
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>
