@@ -1,4 +1,3 @@
-import BackToTop from "../general/BackToTop";
 import Miembro from "../about/Miembro";
 import CallToAction from "../general/CTAbutton";
 import '../styles/About.css';
@@ -10,7 +9,6 @@ export default function About() {
     return (
         <main className='w-screen flex flex-col justify-center items-center overflow-x-hidden scroll-smooth'>
             <div className="main-container flex flex-col gap-4 items-center justify-center max-sm:h-full">
-                <BackToTop />
                 <section className="w-full flex py-16 px-6 gap-4 justify-center firstSection items-center max-sm:flex-col">
                     <div className="text-container w-2/4 h-[680px] p-10 gap-16 flex flex-col items-center justify-center rounded-xl max-sm:h-full">
                         <div className="flex flex-col gap-4">
@@ -68,8 +66,8 @@ export default function About() {
                     </div>
                 </section>
                 <section className="cta-contact flex flex-col items-center justify-center">
-                <div className="bgcont w-[90vw] h-[60vh] flex flex-col items-center justify-center gap-4 p-4 rounded-xl">
-                    <h3 className="text-black text-4xl px-8 text-center">
+                <div className="bgcont w-[90vw] h-[60vh] flex flex-col items-center justify-center gap-4 p-4 rounded-xl max-sm:h-full">
+                    <h3 className="text-black text-4xl px-8 text-center max-sm:text-md">
                         <FormattedMessage id='about.cta' defaultMessage='Somos la mejor agencia de desarrollo en Medellín y Colombia. Transformamos tu marca con soluciones creativas y estratégicas. Únete a quienes ya confían en nosotros. ' />
                     </h3> 
                     <CallToAction href="/contact" classNameName="text-stone-800 p-2 text-xl hover:text-white max-sm:text-sm" >

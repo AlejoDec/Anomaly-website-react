@@ -1,4 +1,3 @@
-import BackToTop from '../general/BackToTop';
 import React from 'react';
 import Swal from 'sweetalert2';
 import '../styles/contacto.css';
@@ -45,7 +44,6 @@ export default function Contacto() {
         <main className='w-screen max-sm:w-screen overflow-x-hidden'>
             <div className="flex items-center justify-center flex-col gap-1 contacto max-sm:w-screen">
                 <div className="contact flex w-full p-7 items-center">
-                    <BackToTop />
                     <section className=" w-full h-auto">
                         <div className="flex flex-column justify-center">
                             <LazyLoadImage src="/contact/contacto.webp" alt="contacto" className="w-[500px] rounded-xl imgStyle" />

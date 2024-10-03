@@ -1,4 +1,3 @@
-import BackToTop from "../general/BackToTop"
 import Hero from "../main/Hero"
 import Servicios from "../main/Servicios"
 import Hese from "../general/Hese"
@@ -8,7 +7,6 @@ import Socios from "../main/Socios"
 export default function HomePage() {
     return (
         <main className='w-screen flex flex-col justify-center items-center overflow-x-hidden scroll-smoth'>
-            <BackToTop />
             <Hero />
             <Text1/>
             <Servicios />

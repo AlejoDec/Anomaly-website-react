@@ -23,7 +23,9 @@
 }
 @media (max-width: 450px) {
     .heroImage {
-        width: 100%;
-        height: 100%;
+        width: 290px;
+        border-right-width: 0.4rem;
+        border-left-width: 0.4rem;
+        border-top-width: 0.4rem;
     }
 }

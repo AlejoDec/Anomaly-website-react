@@ -54,7 +54,7 @@ export default function Footer() {
                 </div>
                 <div>
                     <a href="https://www.instagram.com/anomalydigitalmarketing?igsh=MWdzNjVlcjZzNWN0Zg==" target='_blank'>
-                        <LazyLoadImage src="/red-social/instagram.webp" alt="instagram" className='w-[27px] max-sm:w-[60px]' />
+                        <LazyLoadImage src="/red-social/instagram.webp" alt="instagram" className='w-[27px] max-sm:w-[60px]' width="27px" height="27px" />
                     </a>
                 </div>
             </div>

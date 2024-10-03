@@ -91,10 +91,10 @@ export default function Navbar() {
                 </div>
                 <div className='text-stone-300 flex gap-4 max-sm:flex-col max-sm:items-start'>
                     <button onClick={() => language?.setLanguage('es')} className='langBtn'>
-                        <LazyLoadImage src="/languages/spain.png" alt="spain" className='max-w-6' />
+                        <LazyLoadImage src="/languages/spain.webp" alt="spain" width={'24px'} height={'24px'} />
                     </button>
                     <button onClick={() => language?.setLanguage('en')} className='langBtn'>
-                        <LazyLoadImage src="/languages/united-kingdom.png" alt="united-kingdom" className='max-w-6' />
+                        <LazyLoadImage src="/languages/united-kingdom.webp" alt="united-kingdom" width={'24px'} height={'24px'} />
                     </button>
                 </div>
                 <div className="cta-container flex items-center rounded-xl p-2">

@@ -1,4 +1,3 @@
-import BackToTop from '../general/BackToTop';
 import { FormattedMessage } from 'react-intl';
 import '../styles/Services.css';
 
@@ -8,7 +7,6 @@ export default function Services() {
             <h1 className='hidden'>
                 <FormattedMessage id='services.titlePage' defaultMessage='Servicios' />
             </h1>
-            <BackToTop />
             <div className='flex flex-col py-12 container'>
                 <section className='flex justify-between h-[10vh] py-2 max-sm:flex-col max-sm:h-full max-sm:gap-4'>
                     <div className='flex flex-start max-sm:flex-col'>
