@@ -8,7 +8,6 @@ export default function Hero() {
         <div className="hero-co">
             <NewTag />
             <TextHero />
-            <img src="/anomaly-image/logo-morado.svg" alt="logo-morado-de-la-empresa" className="imageLogo" />
             <ImageHero />
         </div>
     )

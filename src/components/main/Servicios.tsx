@@ -10,8 +10,8 @@ export default function Servicios() {
                 <h2 className="text-stone-300 text-center text-6xl not-italic font-base leading-20 tracking-widest">
                     <FormattedMessage id="services.title" defaultMessage="SERVICIOS" />
                 </h2>
-                <p className="text-stone-300  text-3xl not-italic font-light leading-8">
-                    <FormattedMessage id="services.txt" defaultMessage="Nos esforzamos por ofrecer soluciones que rompen con lo convencional. No nos limitamos a ofrecer un servicio estándar; en su lugar, nos enfocamos en crear estrategias personalizadas que se alinean con las necesidades y metas específicas de cada cliente. Nuestro compromiso es obtener resultados sobresalientes, respaldados por un enfoque creativo y una ejecución impecable, que aseguren el éxito en cada proyecto que desarrollamos." />
+                <p className="text-stone-300 text-3xl not-italic font-light leading-8">
+                    <FormattedMessage id="services.txt" defaultMessage="Nos esforzamos por ofrecer soluciones que rompen con lo convencional. \n No nos limitamos a ofrecer un servicio estándar; en su lugar, nos enfocamos en crear estrategias personalizadas que se alinean con las necesidades y metas específicas de cada cliente. \n Nuestro compromiso es obtener resultados sobresalientes, respaldados por un enfoque creativo y una ejecución impecable, que aseguren el éxito en cada proyecto que desarrollamos."  />
                 </p>
             </div>
             <div className="flex flex-col gap-4">

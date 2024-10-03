@@ -49,6 +49,10 @@ nav {
         border-bottom: 0;
         background: rgba(0, 0, 0, 0);
 
+        .langBtn {
+            position: fixed;
+            left: 100%;
+        }
         .ul-style {
             display: flex;
             flex-direction: column;
@@ -75,11 +79,9 @@ nav {
         .menu-container {
             display: flex;
         }
-
         .logoImga {
             display: none;
         }
-
         .cta-container {
             display: none;
         }

@@ -18,38 +18,47 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleResize = () => {
+            const menuButton = document.querySelector('.menu') as HTMLElement | null;
+            const ulButton = document.querySelectorAll('.listStyle');
+            const ul = document.querySelector('ul') as HTMLElement | null;
+            const langBtns = document.querySelectorAll('.langBtn') as NodeListOf<HTMLElement>;
+
+            const handleMenuClick = () => {
+                if (ul && menuButton && langBtns) {
+                    ul.style.left = '0';
+                    menuButton.style.display = 'none';
+                    langBtns.forEach((btn, index) => {
+                        btn.style.left = `${index * 50}px`;
+                    });
+                    console.log('click');
+                }
+            };
+
+            const handleUlButtonClick = () => {
+                if (ul && menuButton && langBtns) {
+                    ul.style.left = '-100%';
+                    menuButton.style.display = 'flex';
+                    langBtns.forEach(btn => btn.style.left = '-100%');
+                    console.log('hidde');
+                }
+            };
+
             if (window.innerWidth <= 450) {
-                const menuButton = document.querySelector('.menu') as HTMLElement | null;
-                const ulButton = document.querySelectorAll('.listStyle');
-                const ul = document.querySelector('ul') as HTMLElement | null;
-
-                const handleMenuClick = () => {
-                    if (ul && menuButton) {
-                        ul.style.left = '0';
-                        menuButton.style.display = 'none';
-                        console.log('click');
-                    }
-                };
-
-                const handleUlButtonClick = () => {
-                    if (ul && menuButton) {
-                        ul.style.left = '-100%';
-                        menuButton.style.display = 'flex';
-                        console.log('hidde');
-                    }
-                };
-
                 menuButton?.addEventListener('click', handleMenuClick);
                 ulButton.forEach((button) => {
                     button.addEventListener('click', handleUlButtonClick);
                 });
-
-                return () => {
-                    menuButton?.removeEventListener('click', handleMenuClick);
-                    ulButton.forEach((button) => {
-                        button.removeEventListener('click', handleUlButtonClick);
-                    });
-                };
+                langBtns.forEach((btn) => {
+                    btn.addEventListener('click', handleUlButtonClick);
+                });
+            } else {
+                menuButton?.removeEventListener('click', handleMenuClick);
+                ulButton.forEach((button) => {
+                    button.removeEventListener('click', handleUlButtonClick);
+                });
+                langBtns.forEach((btn) => {
+                    btn.removeEventListener('click', handleUlButtonClick);
+                });
             }
         };
 
@@ -77,18 +86,18 @@ export default function Navbar() {
                     }
                 </ul>
                 <div className="menu-container hidden w-full h-full flex items-center menu">
-                    <img src="/anomaly-image/hamburger.webp" alt="Menu" className="w-8 h-auto z-100"/>
+                    <img src="/anomaly-image/hamburger.webp" alt="Menu" className="max-w-8 h-auto z-100"/>
                 </div>
                 <div className='text-stone-300 flex gap-4 max-sm:flex-col max-sm:items-start'>
-                    <button onClick={() => language?.setLanguage('es')}>
-                        <img src="/languages/spain.png" alt="spain" />
+                    <button onClick={() => language?.setLanguage('es')} className='langBtn'>
+                        <img src="/languages/spain.png" alt="spain" className='max-w-6' />
                     </button>
-                    <button onClick={() => language?.setLanguage('en')}>
-                        <img src="/languages/united-kingdom.png" alt="united-kingdom" />
+                    <button onClick={() => language?.setLanguage('en')} className='langBtn'>
+                        <img src="/languages/united-kingdom.png" alt="united-kingdom" className='max-w-6' />
                     </button>
                 </div>
                 <div className="cta-container flex items-center rounded-xl p-2">
-                    <Link to="/contact" className="callToAction flex w-40 h-7 p-3.5 justify-center items-center gap-2.5 rounded-lg font-normal border bg-purple-500 bg-opacity-40 inset-box-shadow text-light-color no-underline backdrop-filter blur-7"><FormattedMessage id="navbar.cta" defaultMessage='Contactanos' /></Link>
+                    <Link to="/contact/" className="callToAction flex w-40 h-7 p-3.5 justify-center items-center gap-2.5 rounded-lg font-normal border bg-purple-500 bg-opacity-40 inset-box-shadow text-light-color no-underline backdrop-filter blur-7"><FormattedMessage id="navbar.cta" defaultMessage='Contactanos' /></Link>
                 </div>
             </nav>
         </div>
