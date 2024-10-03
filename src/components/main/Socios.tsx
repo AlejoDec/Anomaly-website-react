@@ -1,4 +1,5 @@
 import { FormattedMessage } from 'react-intl';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import '../styles/Socios.css';
 
 const clientes = [
@@ -25,13 +26,13 @@ export default function Socios() {
                     <FormattedMessage id='client.title' defaultMessage='CLIE' />
                 </h2>
                 <p className="text-stone-300 text-center text-4xl not-italic font-light leading-8">
-                    <FormattedMessage id='client.txt' defaultMessage='Empresas que confiaron en nosotros y tomaron la mejor desicion' />
+                    <FormattedMessage id='client.txt' defaultMessage='Empresas que confian en nosotros y tomaron la mejor desicion' />
                 </p><br />
                 <div className="sociosContainer flex justify-center items-center gap-10">
                     {
                         clientes.map((socio, index )=> (
                             <a key={index} href={socio.url} target="_blank" className="sociosCard flex justify-center items-center shrink-0 rounded-md">
-                                <img src={socio.image} alt={socio.name} className="sociosImage w-1/2 shrink-0 opacity-50" />
+                                <LazyLoadImage src={socio.image} alt={socio.name} className="sociosImage w-1/2 shrink-0 opacity-50" />
                             </a>
                         ))
                     }

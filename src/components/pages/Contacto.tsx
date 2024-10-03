@@ -3,6 +3,7 @@ import React from 'react';
 import Swal from 'sweetalert2';
 import '../styles/contacto.css';
 import { FormattedMessage } from 'react-intl';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function Contacto() {
     // Removed unused state variable 'result'
@@ -47,7 +48,7 @@ export default function Contacto() {
                     <BackToTop />
                     <section className=" w-full h-auto">
                         <div className="flex flex-column justify-center">
-                            <img src="/contact/contacto.webp" alt="contacto" className="w-[500px] rounded-xl imgStyle" />
+                            <LazyLoadImage src="/contact/contacto.webp" alt="contacto" className="w-[500px] rounded-xl imgStyle" />
                         </div>
                     </section>
                     <section className="w-full h-auto flex justify-center items-center max-sm:w-screen">

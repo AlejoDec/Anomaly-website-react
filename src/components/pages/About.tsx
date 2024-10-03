@@ -3,6 +3,7 @@ import Miembro from "../about/Miembro";
 import CallToAction from "../general/CTAbutton";
 import '../styles/About.css';
 import { FormattedMessage } from "react-intl";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function About() {
 
@@ -31,18 +32,18 @@ export default function About() {
                     </div>
                     <div className="images-container w-2/4 h-[680px] flex gap-2 max-sm:hidden">
                         <div className=" w-[25vw] flex flex-col justify-center items-center gap-2">
-                        <img src="/about/image-1.webp" alt="anomaly" className="imgEdit w-full rounded-xl" />
+                        <LazyLoadImage src="/about/image-1.webp" alt="anomaly" className="imgEdit w-full rounded-xl" />
                         <div className="flex gap-2">
-                            <img src="/about/image-2.webp" alt="anomaly" className="primero-bento w-2/4 rounded-xl" />
-                            <img src="/about/image-3.webp" alt="anomaly" className="primero-bento w-2/4 rounded-xl" />
+                            <LazyLoadImage src="/about/image-2.webp" alt="anomaly" className="primero-bento w-2/4 rounded-xl" />
+                            <LazyLoadImage src="/about/image-3.webp" alt="anomaly" className="primero-bento w-2/4 rounded-xl" />
                         </div>
                         </div>
                         <div className="segundo-bento w-[25vw] flex flex-col justify-center items-center gap-2 max-sm:hidden">
                         <div className="flex gap-2">
-                            <img src="/about/image-4.webp" alt="anomaly" className="w-2/4 rounded-xl" />
-                            <img src="/about/image-5.webp" alt="anomaly" className="w-2/4 rounded-xl" />
+                            <LazyLoadImage src="/about/image-4.webp" alt="anomaly" className="w-2/4 rounded-xl" />
+                            <LazyLoadImage src="/about/image-5.webp" alt="anomaly" className="w-2/4 rounded-xl" />
                         </div>
-                        <img src=".\about\image-6.webp" alt="anomaly" className="w-full rounded-xl" />
+                        <LazyLoadImage src=".\about\image-6.webp" alt="anomaly" className="w-full rounded-xl" />
                         </div>
                     </div>
                 </section>

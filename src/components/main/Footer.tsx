@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ToTop } from '../general/ToTop';
 import { FormattedMessage } from 'react-intl';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import '../styles/Footer.css';
 
 export default function Footer() {
@@ -18,7 +19,7 @@ export default function Footer() {
             <div className='footer-content-2 flex justify-between px-20 py-8 max-sm:flex-col max-sm:gap-4'></div>
             <div className='footer-content-2 flex justify-between px-20 py-8 max-sm:flex-col max-sm:gap-4'>
                 <div className='flex flex-col max-sm:items-center'>
-                    <img src="/anomaly-image/logo-morado-navbar.svg" alt="Anomaly-logo" />
+                    <LazyLoadImage src="/anomaly-image/logo-morado-navbar.svg" alt="Anomaly-logo" />
                     <h2 className='font-bold text-[80px] max-sm:text-[20px] max-sm:text-center'>Anomaly</h2>
                     <p className='font-base text-lg max-sm:text-center'>
                         <FormattedMessage id='footer.txt1' defaultMessage='Agencia de desarrollo creativo' />
@@ -53,7 +54,7 @@ export default function Footer() {
                 </div>
                 <div>
                     <a href="https://www.instagram.com/anomalydigitalmarketing?igsh=MWdzNjVlcjZzNWN0Zg==" target='_blank'>
-                        <img src="/red-social/instagram.webp" alt="instagram" className='w-[27px] max-sm:w-[60px]' />
+                        <LazyLoadImage src="/red-social/instagram.webp" alt="instagram" className='w-[27px] max-sm:w-[60px]' />
                     </a>
                 </div>
             </div>

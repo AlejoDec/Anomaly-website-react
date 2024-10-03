@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { ToTop } from '../general/ToTop';
 import { useContext, useEffect } from 'react';
 import { FormattedMessage } from 'react-intl';
@@ -74,7 +75,7 @@ export default function Navbar() {
         <div className="w-screen flex justify-center">
             <nav className="w-4/5 max-h-16 flex justify-between aling-center px-6 py-2 text-white gap-12">
                 <Link to="/">
-                    <img src="/anomaly-image/logo-morado-navbar.svg" alt="Logo-Anomaly" className="logoImga h-full"/>
+                    <LazyLoadImage src="/anomaly-image/logo-morado-navbar.svg" alt="Logo-Anomaly" className="logoImga h-full"/>
                 </Link>
                 <ul className="flex py-0.5 px-3 justify-center items-center gap-7 rounded-full list-none w-2/4 max-sm:w-screen max-sm:rounded-none max-sm:gap-0 ul-style">
                     {
@@ -86,14 +87,14 @@ export default function Navbar() {
                     }
                 </ul>
                 <div className="menu-container hidden w-full h-full flex items-center menu">
-                    <img src="/anomaly-image/hamburger.webp" alt="Menu" className="max-w-8 h-auto z-100"/>
+                    <LazyLoadImage src="/anomaly-image/hamburger.webp" alt="Menu" className="max-w-8 h-auto z-100"/>
                 </div>
                 <div className='text-stone-300 flex gap-4 max-sm:flex-col max-sm:items-start'>
                     <button onClick={() => language?.setLanguage('es')} className='langBtn'>
-                        <img src="/languages/spain.png" alt="spain" className='max-w-6' />
+                        <LazyLoadImage src="/languages/spain.png" alt="spain" className='max-w-6' />
                     </button>
                     <button onClick={() => language?.setLanguage('en')} className='langBtn'>
-                        <img src="/languages/united-kingdom.png" alt="united-kingdom" className='max-w-6' />
+                        <LazyLoadImage src="/languages/united-kingdom.png" alt="united-kingdom" className='max-w-6' />
                     </button>
                 </div>
                 <div className="cta-container flex items-center rounded-xl p-2">
