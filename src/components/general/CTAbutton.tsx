@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
-import '../styles/CTAbutton.css';
 
 export default function CTAbutton({ href, classNameName, children }: { href: string, classNameName?: string, children: React.ReactNode }) {
     return (
         /* From Uiverse.io by Masoodaykhan */ 
         <button
-        className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-[#A369BC] backdrop-blur-md lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#8C3887] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+        className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-[#A369BC] backdrop-blur-md lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#8C3887] hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group max-sm:font-base"
         type="submit"
         >
             <Link to={href} className={classNameName}>

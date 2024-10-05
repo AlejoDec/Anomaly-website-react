@@ -6,7 +6,7 @@ const clientes = [
     {
         id: 1,
         name: 'iLerne',
-        image: 'https://ilerne.com/wp-content/uploads/2024/08/Logo-sin-Descp-font-white-164x82.png',
+        image: '/socios/logo-ilerne.webp',
         url: 'https://ilerne.com'
     },
     {

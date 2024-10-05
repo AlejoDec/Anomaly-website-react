@@ -72,10 +72,10 @@ export default function Navbar() {
     }, []);
 
     return (
-        <div className="w-screen flex justify-center">
+        <header className="w-screen flex justify-center">
             <nav className="w-4/5 max-h-16 flex justify-between aling-center px-6 py-2 text-white gap-12">
                 <Link to="/">
-                    <LazyLoadImage src="/anomaly-image/logo-morado-navbar.svg" alt="Logo-Anomaly" className="logoImga h-full"/>
+                    <LazyLoadImage src="/anomaly-image/logo-morado-navbar.svg" alt="Logo-Anomaly" className="logoImga h-full" width={'87px'} height={'47px'}/>
                 </Link>
                 <ul className="flex py-0.5 px-3 justify-center items-center gap-7 rounded-full list-none w-2/4 max-sm:w-screen max-sm:rounded-none max-sm:gap-0 ul-style">
                     {
@@ -101,6 +101,6 @@ export default function Navbar() {
                     <Link to="/contact/" className="callToAction flex w-40 h-7 p-3.5 justify-center items-center gap-2.5 rounded-lg font-normal border bg-purple-500 bg-opacity-40 inset-box-shadow text-light-color no-underline backdrop-filter blur-7"><FormattedMessage id="navbar.cta" defaultMessage='Contactanos' /></Link>
                 </div>
             </nav>
-        </div>
+        </header>
     )
 }

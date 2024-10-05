@@ -15,11 +15,12 @@ export default function AppRouter() {
   const axiosInstance: AxiosInstance = axios.create();
 
   axiosInstance.interceptors.response.use(response => response, error => {
-    if (error.response.status === 403 ){
+    if (error.response && error.response.status === 403) {
        // redirect to 403 page
-       window.location.href = '/'
+       window.location.href = '/';
     }
- });
+    return Promise.reject(error);
+  });
 
   return (
       <Router>
@@ -27,12 +28,11 @@ export default function AppRouter() {
         <Suspense fallback={<div className='w-screen h-screen flex items-center justify-center text-stone-300 text-2xl'>Loading...</div>}>
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='/home/' element={<HomePage />} />
-          <Route path='/about/' element={<About />} />
-          <Route path='/contact/' element={<Contacto />} />
-          <Route path='/services/' element={<Services />} />
-          <Route path='/404/' element={<NotFound />} />
-          <Route path='*' element={<Navigate to='/404/' />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contacto />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/404' element={<NotFound />} />
+          <Route path='*' element={<Navigate to='/404' />} />
         </Routes>
         <Footer />
         </Suspense>

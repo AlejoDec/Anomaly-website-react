@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { ToTop } from '../general/ToTop';
 import { FormattedMessage } from 'react-intl';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import '../styles/Footer.css';
 
 export default function Footer() {
 
@@ -14,10 +13,9 @@ export default function Footer() {
     ]
 
     return (
-        
-        <footer className='flex flex-col w-screen text-stone-300 max-sm:items-center'>
-            <div className='footer-content-2 flex justify-between px-20 py-8 max-sm:flex-col max-sm:gap-4'></div>
-            <div className='footer-content-2 flex justify-between px-20 py-8 max-sm:flex-col max-sm:gap-4'>
+        <footer className='flex flex-col w-screen text-stone-300 shadow-custom-footer <-1 max-sm:items-center'>
+            <div className='border-b-2 border-custom-pink flex justify-between px-20 py-8 max-sm:flex-col max-sm:gap-4'></div>
+            <div className='border-b-2 border-custom-pink flex justify-between px-20 py-8 max-sm:flex-col max-sm:gap-4'>
                 <div className='flex flex-col max-sm:items-center'>
                     <LazyLoadImage src="/anomaly-image/logo-morado-navbar.svg" alt="Anomaly-logo" />
                     <h2 className='font-bold text-[80px] max-sm:text-[20px] max-sm:text-center'>Anomaly</h2>
@@ -58,7 +56,6 @@ export default function Footer() {
                     </a>
                 </div>
             </div>
-            
         </footer>
     )
 }
