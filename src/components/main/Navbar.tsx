@@ -11,8 +11,8 @@ export default function Navbar() {
         { label: <FormattedMessage id="navbar.home" defaultMessage='Inicio' />, path: '/' },
         { label: <FormattedMessage id="navbar.about" defaultMessage='Nosotros' />, path: '/about' },
         { label: <FormattedMessage id="navbar.contact" defaultMessage='Contacto' />, path: '/contact' },
-        { label: <FormattedMessage id="navbar.services" defaultMessage='Servicios' />, path: '/services' }
-        // { label: <FormattedMessage id="navbar.blog" defaultMessage='Blog' />, path: '/blog' }
+        { label: <FormattedMessage id="navbar.services" defaultMessage='Servicios' />, path: '/services' },
+        // { label: <FormattedMessage id="navbar.blog" defaultMessage='Blog' />, path: 'https://blog.anomalystudio.com.co' }
     ]
 
     const language = useContext(langContext);
@@ -72,8 +72,8 @@ export default function Navbar() {
     }, []);
 
     return (
-        <header className="w-screen flex justify-center">
-            <nav className="w-4/5 max-h-16 flex justify-between aling-center px-6 py-2 text-white gap-12">
+        <header className="flex justify-center">
+            <nav className="flex justify-between aling-center px-6 py-2 text-white gap-12 max-sm:justify-center max-sm:items-center max-sm:flex-start">
                 <Link to="/">
                     <LazyLoadImage src="/anomaly-image/logo-morado-navbar.svg" alt="Logo-Anomaly" className="logoImga h-full" width={'87px'} height={'47px'}/>
                 </Link>
@@ -81,13 +81,17 @@ export default function Navbar() {
                     {
                         Object.entries(navItems).map(([key, item]) => (
                             <li className="listContainer my-4 max-sm:my-0" key={key}>
-                                <Link to={item.path} className="listStyle" onClick={ToTop}>{item.label}</Link>
+                                {item.path.startsWith('http') ? (
+                                    <a href={item.path} className="listStyle" onClick={ToTop} rel="noopener noreferrer">{item.label}</a>
+                                ) : (
+                                    <Link to={item.path} className="listStyle" onClick={ToTop}>{item.label}</Link>
+                                )}
                             </li>
                         ))
                     }
                 </ul>
-                <div className="menu-container hidden w-full h-full flex items-center menu">
-                    <LazyLoadImage src="/anomaly-image/hamburger.webp" alt="Menu" className="max-w-8 h-auto z-100"/>
+                <div className="menu-container hidden w-full flex items-center menu">
+                    <LazyLoadImage src="/anomaly-image/hamburger.webp" alt="Menu" className="z-100" width={'32px'} height={'32px'}/>
                 </div>
                 <div className='text-stone-300 flex gap-4 max-sm:flex-col max-sm:items-start'>
                     <button onClick={() => language?.setLanguage('es')} className='langBtn'>

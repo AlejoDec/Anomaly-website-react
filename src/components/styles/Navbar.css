@@ -73,11 +73,11 @@ nav {
                 padding-top: 2rem;
                 padding-bottom: 2rem;
                 margin: 0.3px;
-
             }
         }
         .menu-container {
             display: flex;
+            justify-content: flex-end;
         }
         .logoImga {
             display: none;

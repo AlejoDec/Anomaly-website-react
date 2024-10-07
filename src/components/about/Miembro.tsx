@@ -1,4 +1,5 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import anonimusWebp from '/miembros/anonimo.webp';
 import '../styles/About.css';
 
 const Miembros = [
@@ -58,7 +59,7 @@ export default function Miembro() {
         Miembros.map((miembro) => (
             <div className="flex flex-col items-center gap-4 rounded-xl bg-[#000] w-full h-[341px] p-2">
                 <article className="relative w-full">
-                    <LazyLoadImage src="/miembros/anonimo.webp" alt="anonimus" className="rounded-xl text-stone-300" width="189" height="189" />
+                    <LazyLoadImage src={anonimusWebp} alt="anonimus" className="rounded-xl text-stone-300" width="189" height="189" />
                     {/* <img src={miembro.img} alt={miembro.nombre} /> */}
                 </article>
                 <h4 className="text-stone-400 text-xl text-center">{miembro.nombre}<br />{miembro.apellidos}</h4>

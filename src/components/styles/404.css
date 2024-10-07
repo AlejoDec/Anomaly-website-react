@@ -3,10 +3,7 @@ html {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-}
-.co {
-    background-color: #282a2b;
+    overflow-x: hidden;
 }
 @keyframes stageBackground {
 0%, 10%, 90%, 100% {

@@ -6,7 +6,7 @@ import Socios from "../main/Socios"
 
 export default function HomePage() {
     return (
-        <main className='w-screen flex flex-col justify-center items-center overflow-x-hidden scroll-smoth'>
+        <main className='w-screen flex flex-col justify-center items-center overflow-x-hidden scroll-smoth max-sm:mt-[20vh]'>
             <Hero />
             <Text1/>
             <Servicios />

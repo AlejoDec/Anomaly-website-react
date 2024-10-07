@@ -8,6 +8,7 @@ const About = lazy(() => import('./components/pages/About'));
 const Contacto = lazy(() => import('./components/pages/Contacto'));
 const Services = lazy(() => import('./components/pages/Services'));
 const NotFound = lazy(() => import('./components/pages/404'));
+const Forbidden = lazy(() => import('./components/pages/403'));
 
 function AppContent() {
   const location = useLocation();
@@ -16,8 +17,9 @@ function AppContent() {
   useEffect(() => {
     console.log('Current path:', location.pathname);
     if (location.pathname.endsWith('/') && location.pathname !== '/') {
-      console.log('Redirecting to:', location.pathname.slice(0, -1));
-      navigate(location.pathname.slice(0, -1), { replace: true });
+      const newPath = location.pathname.slice(0, -1);
+      console.log('Redirecting to:', newPath);
+      navigate(newPath, { replace: true });
     }
   }, [location, navigate]);
 
@@ -30,6 +32,7 @@ function AppContent() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contacto />} />
           <Route path='/services' element={<Services />} />
+          <Route path='/403' element={<Forbidden />} />
           <Route path='/404' element={<NotFound />} />
           <Route path='*' element={<Navigate to='/404' />} />
         </Routes>

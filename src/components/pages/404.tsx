@@ -4,8 +4,8 @@ import '../styles/404.css';
 export default function NotFound() {
     return (
         <div className="overflow-hidden">
-            <div className="co w-screen h-screen flex flex-col items-center justify-center">
-                <div className="flex flex-col gap-4">
+            <div className="w-screen h-screen flex flex-col items-center justify-center b-[#282a2b]">
+                <div className="flex flex-col gap-2">
                     <p className="text-stone-300 text-6xl text-center">
                         <FormattedMessage id='404.txt' defaultMessage='¡Oh no! Parece que te has perdido' />
                     </p>

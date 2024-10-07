@@ -1,8 +1,16 @@
 import Miembro from "../about/Miembro";
 import CallToAction from "../general/CTAbutton";
-import '../styles/About.css';
 import { FormattedMessage } from "react-intl";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+
+import webp1 from '/about/image-1.webp';
+import webp2 from '/about/image-2.webp';
+import webp3 from '/about/image-3.webp';
+import webp4 from '/about/image-4.webp';
+import webp5 from '/about/image-5.webp';
+import webp6 from '/about/image-6.webp';
+
+import '../styles/About.css';
 
 export default function About() {
 
@@ -30,18 +38,18 @@ export default function About() {
                     </div>
                     <div className="images-container w-2/4 h-[680px] flex gap-2 max-sm:hidden">
                         <div className=" w-[25vw] flex flex-col justify-center items-center gap-2">
-                        <LazyLoadImage src="/about/image-1.webp" alt="anomaly" className="imgEdit w-full rounded-xl" />
+                        <LazyLoadImage src={webp1} alt="anomaly" className="imgEdit w-full rounded-xl" />
                         <div className="flex gap-2">
-                            <LazyLoadImage src="/about/image-2.webp" alt="anomaly" className="primero-bento w-2/4 rounded-xl" />
-                            <LazyLoadImage src="/about/image-3.webp" alt="anomaly" className="primero-bento w-2/4 rounded-xl" />
+                            <LazyLoadImage src={webp2} alt="anomaly" className="primero-bento w-2/4 rounded-xl" />
+                            <LazyLoadImage src={webp3} alt="anomaly" className="primero-bento w-2/4 rounded-xl" />
                         </div>
                         </div>
                         <div className="segundo-bento w-[25vw] flex flex-col justify-center items-center gap-2 max-sm:hidden">
                         <div className="flex gap-2">
-                            <LazyLoadImage src="/about/image-4.webp" alt="anomaly" className="w-2/4 rounded-xl" />
-                            <LazyLoadImage src="/about/image-5.webp" alt="anomaly" className="w-2/4 rounded-xl" />
+                            <LazyLoadImage src={webp4} alt="anomaly" className="w-2/4 rounded-xl" />
+                            <LazyLoadImage src={webp5} alt="anomaly" className="w-2/4 rounded-xl" />
                         </div>
-                        <LazyLoadImage src=".\about\image-6.webp" alt="anomaly" className="w-full rounded-xl" />
+                        <LazyLoadImage src={webp6} alt="anomaly" className="w-full rounded-xl" />
                         </div>
                     </div>
                 </section>
@@ -54,7 +62,7 @@ export default function About() {
                         </div>
                         <Miembro />
                     </div>
-                    <div className="text-container-miembros w-2/4 h-full p-12 max-sm:flex-end">
+                    <div className="text-container-miembros w-2/4 h-full p-12 max-sm:flex-end max-sm:w-full max-sm:px-0">
                         <div className="gap-3 flex flex-col bgEdit rounded-xl p-6 h-full">
                         <h3 className="text-stone-300 text-4xl font-bold">
                             <FormattedMessage id='about.team2' defaultMessage='HEY, HOLA SOMOS ANOMALY' />
