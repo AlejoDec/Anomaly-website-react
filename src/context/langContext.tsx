@@ -36,7 +36,9 @@ export const LangProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return (
         <langContext.Provider value={{ locale, setLocale, setLanguage }}>
             <IntlProvider locale={locale} messages={langShow}> 
-                {children}
+                <div className="" style={{ whiteSpace: 'pre-line' }}>
+                    {children}
+                </div>
             </IntlProvider>
         </langContext.Provider>
     );
