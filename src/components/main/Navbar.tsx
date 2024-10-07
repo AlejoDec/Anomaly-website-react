@@ -73,7 +73,7 @@ export default function Navbar() {
 
     return (
         <header className="flex justify-center">
-            <nav className="flex justify-between aling-center px-6 py-2 text-white gap-12 max-sm:justify-center max-sm:items-center max-sm:flex-start">
+            <nav className="flex justify-between aling-center px-6 py-2 text-white gap-12 max-sm:justify-start max-sm:items-center max-sm:flex-start">
                 <Link to="/">
                     <LazyLoadImage src="/anomaly-image/logo-morado-navbar.svg" alt="Logo-Anomaly" className="logoImga h-full" width={'87px'} height={'47px'}/>
                 </Link>
@@ -93,7 +93,7 @@ export default function Navbar() {
                 <div className="menu-container hidden w-full flex items-center menu">
                     <LazyLoadImage src="/anomaly-image/hamburger.webp" alt="Menu" className="z-100" width={'32px'} height={'32px'}/>
                 </div>
-                <div className='text-stone-300 flex gap-4 max-sm:flex-col max-sm:items-start'>
+                <div className='text-stone-300 flex gap-4 max-sm:flex-col max-sm:items-center'>
                     <button onClick={() => language?.setLanguage('es')} className='langBtn'>
                         <LazyLoadImage src="/languages/spain.webp" alt="spain" width={'24px'} height={'24px'} />
                     </button>
